@@ -1,0 +1,1100 @@
+<html>
+<head>
+<title>TestNG:  10:WorkFLows_EquityTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>10:WorkFLows_EquityTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/5/6</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 30 09:22:56 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1609 seconds (1609645 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: [TestResult name=CITI_Equities_Settled_FX_Pulse status=FAILURE method=EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(java.lang.String, java.util.LinkedHashMap)[pri:0, instance:testcases.workflows.EquityWorkFlowsTests@fad74ee] output=Test Data Used ::  {Testcaseid=TC006, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=30, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Cancel, AccountId=50000050, MessageSheetName=SELLGTCMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}]<br/>
+<a href="#Output-302112868" onClick='toggleBox("Output-302112868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-302112868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-302112868">
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:45898 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: InternetExplorerDriver<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302112868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace302112868'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::1, {Testcaseid=TC001, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=100, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Day, AccountId=50000050, MessageSheetName=BUYDAYMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-649827042" onClick='toggleBox("Output-649827042", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-649827042" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-649827042">
+Test Data Used ::  {Testcaseid=TC001, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=100, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Day, AccountId=50000050, MessageSheetName=BUYDAYMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: gprasad<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Buy"<br/>
+PASS::Order Entry Screen :: Side value selected as "Buy"<br/>
+PASS::Order Entry Screen :: value selected as "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Customer value entered with "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "100"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018033009234"<br/>
+PASS::Order Entry Screen :: value selected as "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Market value entered with "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Security Id value entered with "JP3592200004"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Market"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Market"<br/>
+PASS::Order Entry Screen :: Currency value entered with "JPY"<br/>
+PASS::Order Entry Screen :: value selected as "50000050"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "50000050"<br/>
+PASS::Order Entry Screen :: value selected as "Day"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Day"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018033009234<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009234<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018033009234<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009234, Actual Value = OID2018033009234<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Buy, Actual Value = Buy<br/>
+PASS::**Order Information::Order Type** Expected Value = Market, Actual Value = Market<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 100, Actual Value = 100<br/>
+PASS::**Order Information::Time in Force** Expected Value = Day, Actual Value = Day<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref033009252", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 100<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+FAIL::Order status is not moved to Calculated / Pending FX Confirmation for the Order ID/Customer Ref :: OID2018033009234<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at pages.pageclasses.OrderMgtPage.verifyFundOrderStatusID(OrderMgtPage.java:2500)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:350)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649827042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace649827042'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at pages.pageclasses.OrderMgtPage.verifyFundOrderStatusID(OrderMgtPage.java:2500)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:350)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>225</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::2, {Testcaseid=TC002, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=100, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Limit, TimeInForce=Good Till Date, AccountId=50000050, MessageSheetName=BUYGTDLIMIT, LimitPrice=12.25, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-171672975" onClick='toggleBox("Output-171672975", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-171672975" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-171672975">
+Test Data Used ::  {Testcaseid=TC002, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=100, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Limit, TimeInForce=Good Till Date, AccountId=50000050, MessageSheetName=BUYGTDLIMIT, LimitPrice=12.25, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: gprasad<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Buy"<br/>
+PASS::Order Entry Screen :: Side value selected as "Buy"<br/>
+PASS::Order Entry Screen :: value selected as "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Customer value entered with "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "100"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018033009275"<br/>
+PASS::Order Entry Screen :: value selected as "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Market value entered with "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Security Id value entered with "JP3592200004"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Limit"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Limit"<br/>
+PASS::Order Entry Screen :: Currency value entered with "JPY"<br/>
+PASS::Order Entry Screen :: Limit Price value entered with "12.25"<br/>
+PASS::Order Entry Screen :: value selected as "50000050"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "50000050"<br/>
+PASS::Order Entry Screen :: value selected as "Good Till Date"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Good Till Date"<br/>
+PASS::Order Entry Screen :: Good Till Date value entered with"02/04/2018"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018033009275<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009275<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018033009275<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009275, Actual Value = OID2018033009275<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Buy, Actual Value = Buy<br/>
+PASS::**Order Information::Order Type** Expected Value = Limit, Actual Value = Limit<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 100, Actual Value = 100<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Date - 02/04/2018, Actual Value = Good Till Date - 02/04/2018<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref033009294", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 100<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+PASS:: Clicked on Order ID link, GTR Trades tab is opened.<br/>
+FAIL:: Order status is not moved to Calculated / Pending FX Confirmation for the Order ID::OID2018033009275<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:343)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace171672975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace171672975'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:343)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>243</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::3, {Testcaseid=TC003, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=200, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Cancel, AccountId=50000050, MessageSheetName=BUYGTCMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-1501976525" onClick='toggleBox("Output-1501976525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1501976525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501976525">
+Test Data Used ::  {Testcaseid=TC003, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Buy, Quantity=200, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Cancel, AccountId=50000050, MessageSheetName=BUYGTCMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: gprasad<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Buy"<br/>
+PASS::Order Entry Screen :: Side value selected as "Buy"<br/>
+PASS::Order Entry Screen :: value selected as "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Customer value entered with "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "200"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018033009323"<br/>
+PASS::Order Entry Screen :: value selected as "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Market value entered with "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Security Id value entered with "JP3592200004"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Market"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Market"<br/>
+PASS::Order Entry Screen :: Currency value entered with "JPY"<br/>
+PASS::Order Entry Screen :: value selected as "50000050"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "50000050"<br/>
+PASS::Order Entry Screen :: value selected as "Good Till Cancel"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Good Till Cancel"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018033009323<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009323<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018033009323<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009323, Actual Value = OID2018033009323<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Buy, Actual Value = Buy<br/>
+PASS::**Order Information::Order Type** Expected Value = Market, Actual Value = Market<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 200, Actual Value = 200<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Cancel, Actual Value = Good Till Cancel<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref033009342", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 200<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+PASS:: Clicked on Order ID link, GTR Trades tab is opened.<br/>
+FAIL:: Order status is not moved to Calculated / Pending FX Confirmation for the Order ID::OID2018033009323<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:343)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1501976525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1501976525'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:343)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>255</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::4, {Testcaseid=TC004, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=10, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Limit, TimeInForce=Day, AccountId=50000050, MessageSheetName=SELLDAYLIMIT, LimitPrice=10, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-655550708" onClick='toggleBox("Output-655550708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-655550708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-655550708">
+Test Data Used ::  {Testcaseid=TC004, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=10, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Limit, TimeInForce=Day, AccountId=50000050, MessageSheetName=SELLDAYLIMIT, LimitPrice=10, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: gprasad<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Sell"<br/>
+PASS::Order Entry Screen :: Side value selected as "Sell"<br/>
+PASS::Order Entry Screen :: value selected as "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Customer value entered with "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "10"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018033009370"<br/>
+PASS::Order Entry Screen :: value selected as "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Market value entered with "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Security Id value entered with "JP3592200004"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Limit"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Limit"<br/>
+PASS::Order Entry Screen :: Currency value entered with "JPY"<br/>
+PASS::Order Entry Screen :: Limit Price value entered with "10"<br/>
+PASS::Order Entry Screen :: value selected as "50000050"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "50000050"<br/>
+PASS::Order Entry Screen :: value selected as "Day"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Day"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018033009370<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009370<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018033009370<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009370, Actual Value = OID2018033009370<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Sell, Actual Value = Sell<br/>
+PASS::**Order Information::Order Type** Expected Value = Limit, Actual Value = Limit<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 10, Actual Value = 10<br/>
+PASS::**Order Information::Time in Force** Expected Value = Day, Actual Value = Day<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref033009385", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+FAIL::Order status is not moved to Calculated / Pending FX Confirmation for the Order ID/Customer Ref :: OID2018033009370<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at pages.pageclasses.OrderMgtPage.verifyFundOrderStatusID(OrderMgtPage.java:2500)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:350)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655550708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655550708'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at pages.pageclasses.OrderMgtPage.verifyFundOrderStatusID(OrderMgtPage.java:2500)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:350)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>228</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::6, {Testcaseid=TC006, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=30, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Cancel, AccountId=50000050, MessageSheetName=SELLGTCMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-524323510" onClick='toggleBox("Output-524323510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-524323510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-524323510">
+Test Data Used ::  {Testcaseid=TC006, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=30, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Cancel, AccountId=50000050, MessageSheetName=SELLGTCMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: OTM User Login is failed :: gprasad<br/>
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:45898 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at pages.pageclasses.LoginPage.loginToOTM(LoginPage.java:164)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:185)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace524323510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace524323510'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at pages.pageclasses.LoginPage.loginToOTM(LoginPage.java:164)
+	at testcases.workflows.EquityWorkFlowsTests.equities_Workflow(EquityWorkFlowsTests.java:185)
+	at testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse(EquityWorkFlowsTests.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>94</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_Settled_FX_Pulse()'><b>CITI_Equities_Settled_FX_Pulse</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_Settled_FX_Pulse:::5, {Testcaseid=TC005, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=20, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Date, AccountId=50000050, MessageSheetName=SELLGTDMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+<a href="#Output-2124645278" onClick='toggleBox("Output-2124645278", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124645278" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124645278">
+Test Data Used ::  {Testcaseid=TC005, Customer=RegEQclientMC-GBP-FIX, FullCustomer=RegEQclientMC-GBP-FIX, BuySell=Sell, Quantity=20, SecurityId=JP3592200004, Currency=JPY, Market=JP - TOKYO STOCK EXCHANGE, Broker=CGM DMA, OrderType=Market, TimeInForce=Good Till Date, AccountId=50000050, MessageSheetName=SELLGTDMKT, LimitPrice=, Business=Equity Orders, HandlingInstructions=Automated}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: gprasad<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Sell"<br/>
+PASS::Order Entry Screen :: Side value selected as "Sell"<br/>
+PASS::Order Entry Screen :: value selected as "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Customer value entered with "RegEQclientMC-GBP-FIX"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "20"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018033009412"<br/>
+PASS::Order Entry Screen :: value selected as "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Market value entered with "JP - TOKYO STOCK EXCHANGE"<br/>
+PASS::Order Entry Screen :: Security Id value entered with "JP3592200004"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Market"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Market"<br/>
+PASS::Order Entry Screen :: Currency value entered with "JPY"<br/>
+PASS::Order Entry Screen :: value selected as "50000050"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "50000050"<br/>
+PASS::Order Entry Screen :: value selected as "Good Till Date"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Good Till Date"<br/>
+PASS::Order Entry Screen :: Good Till Date value entered with"02/04/2018"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018033009412<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009412<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018033009412<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009412, Actual Value = OID2018033009412<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Sell, Actual Value = Sell<br/>
+PASS::**Order Information::Order Type** Expected Value = Market, Actual Value = Market<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 20, Actual Value = 20<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Date - 02/04/2018, Actual Value = Good Till Date - 02/04/2018<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref033009431", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 20<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 02/04/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+PASS:: New Execution of the order is done successfully.<br/>
+PASS:: Clicked on Order ID link, GTR Trades tab is opened.<br/>
+PASS::GTR Trades Tab: Order Status is moved to Calculated / Pending FX Confirmationfor the Order ID::OID2018033009412<br/>
+PASS:: Override FXRate is entered and submitted successfully<br/>
+PASS::Current Order status is  "Calculated"  for the Order ID/Customer Ref :: OID2018033009412<br/>
+*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018033009412, Actual Value = OID2018033009412<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Sell, Actual Value = Sell<br/>
+PASS::**Order Information::Order Type** Expected Value = Market, Actual Value = Market<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 20, Actual Value = 20<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Date - 02/04/2018, Actual Value = Good Till Date - 02/04/2018<br/>
+PASS::**Order Information::Customer** Expected Value = RegEQclientMC-GBP-FIX, Actual Value = RegEQclientMC-GBP-FIX<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = Toshiba Corporation, Actual Value = Toshiba Corporation<br/>
+PASS::**Order Information::Trading Account** Expected Value = 50000050, Actual Value = 50000050<br/>
+PASS::**Order Information::Status** Expected Value = Calculated, Actual Value = Calculated<br/>
+*********Order Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Order Blotter::Open Orders / Trades::New Order accepted::Message Verification START***********<br/>
+PASS::**Expected Value =  8:BeginString = FIX.4.3,  Actual Value =  8:BeginString = FIX.4.3**<br/>
+PASS::**Expected Value =  35:MsgType = 8,  Actual Value =  35:MsgType = 8**<br/>
+PASS::**Expected Value =  49:SenderCompID = CGMIDMA,  Actual Value =  49:SenderCompID = CGMIDMA**<br/>
+PASS::**Expected Value =  128:DeliverToCompID = RegEQMCGBP,  Actual Value =  128:DeliverToCompID = RegEQMCGBP**<br/>
+PASS::**Expected Value =  37:OrderID = Ref033009431,  Actual Value =  37:OrderID = Ref033009431**<br/>
+PASS::**Expected Value =  11:ClOrdID = OID2018033009412,  Actual Value =  11:ClOrdID = OID2018033009412**<br/>
+PASS::**Expected Value =  150:ExecType = 0,  Actual Value =  150:ExecType = 0**<br/>
+PASS::**Expected Value =  39:OrdStatus = 0,  Actual Value =  39:OrdStatus = 0**<br/>
+PASS::**Expected Value =  55:Symbol = JP3592200004,  Actual Value =  55:Symbol = JP3592200004**<br/>
+PASS::**Expected Value =  48:SecurityID = JP3592200004,  Actual Value =  48:SecurityID = JP3592200004**<br/>
+PASS::**Expected Value =  22:SecurityIDSource = 4,  Actual Value =  22:SecurityIDSource = 4**<br/>
+PASS::**Expected Value =  460:Product = 5,  Actual Value =  460:Product = 5**<br/>
+PASS::**Expected Value =  167:SecurityType = CS,  Actual Value =  167:SecurityType = CS**<br/>
+PASS::**Expected Value =  107:SecurityDesc = Toshiba Corporation,  Actual Value =  107:SecurityDesc = Toshiba Corporation**<br/>
+PASS::**Expected Value =  54:Side = 2,  Actual Value =  54:Side = 2**<br/>
+PASS::**Expected Value =  38:OrderQty = 20,  Actual Value =  38:OrderQty = 20**<br/>
+PASS::**Expected Value =  15:Currency = JPY,  Actual Value =  15:Currency = JPY**<br/>
+PASS::**Expected Value =  59:TimeInForce = 6,  Actual Value =  59:TimeInForce = 6**<br/>
+PASS::**Expected Value =  32:LastQty = 0,  Actual Value =  32:LastQty = 0**<br/>
+PASS::**Expected Value =  31:LastPx = 0,  Actual Value =  31:LastPx = 0**<br/>
+PASS::**Expected Value =  151:LeavesQty = 20,  Actual Value =  151:LeavesQty = 20**<br/>
+PASS::**Expected Value =  14:CumQty = 0,  Actual Value =  14:CumQty = 0**<br/>
+PASS::**Expected Value =  6:AvgPx = 0,  Actual Value =  6:AvgPx = 0**<br/>
+PASS::**Expected Value =  424:DayOrderQty = 20,  Actual Value =  424:DayOrderQty = 20**<br/>
+FAIL::**********Expected Value =  75:TradeDate = 20180402,,  Actual Value = 75:TradeDate = 20180330**********<br/>
+PASS::**Expected Value =  16586:WireProtocolVersion = FIX.4.3,  Actual Value =  16586:WireProtocolVersion = FIX.4.3**<br/>
+***********Order Blotter::Open Orders / Trades::New Order accepted::Message Verification END***********<br/>
+***********Order Blotter::Open Orders / Trades::Execution Report (fill) received::Message Verification START***********<br/>
+PASS::**Expected Value =  8:BeginString = FIX.4.3,  Actual Value =  8:BeginString = FIX.4.3**<br/>
+PASS::**Expected Value =  35:MsgType = 8,  Actual Value =  35:MsgType = 8**<br/>
+PASS::**Expected Value =  49:SenderCompID = CGMIDMA,  Actual Value =  49:SenderCompID = CGMIDMA**<br/>
+PASS::**Expected Value =  128:DeliverToCompID = RegEQMCGBP,  Actual Value =  128:DeliverToCompID = RegEQMCGBP**<br/>
+PASS::**Expected Value =  11:ClOrdID = OID2018033009412,  Actual Value =  11:ClOrdID = OID2018033009412**<br/>
+PASS::**Expected Value =  150:ExecType = F,  Actual Value =  150:ExecType = F**<br/>
+PASS::**Expected Value =  39:OrdStatus = 2,  Actual Value =  39:OrdStatus = 2**<br/>
+PASS::**Expected Value =  64:SettlDate = 20180402,  Actual Value =  64:SettlDate = 20180402**<br/>
+PASS::**Expected Value =  55:Symbol = JP3592200004,  Actual Value =  55:Symbol = JP3592200004**<br/>
+PASS::**Expected Value =  48:SecurityID = JP3592200004,  Actual Value =  48:SecurityID = JP3592200004**<br/>
+PASS::**Expected Value =  22:SecurityIDSource = 4,  Actual Value =  22:SecurityIDSource = 4**<br/>
+PASS::**Expected Value =  460:Product = 5,  Actual Value =  460:Product = 5**<br/>
+PASS::**Expected Value =  167:SecurityType = CS,  Actual Value =  167:SecurityType = CS**<br/>
+PASS::**Expected Value =  107:SecurityDesc = Toshiba Corporation,  Actual Value =  107:SecurityDesc = Toshiba Corporation**<br/>
+PASS::**Expected Value =  54:Side = 2,  Actual Value =  54:Side = 2**<br/>
+PASS::**Expected Value =  38:OrderQty = 20,  Actual Value =  38:OrderQty = 20**<br/>
+PASS::**Expected Value =  59:TimeInForce = 6,  Actual Value =  59:TimeInForce = 6**<br/>
+PASS::**Expected Value =  32:LastQty = 20,  Actual Value =  32:LastQty = 20**<br/>
+PASS::**Expected Value =  31:LastPx = 10,  Actual Value =  31:LastPx = 10**<br/>
+PASS::**Expected Value =  30:LastMkt = XTKS,  Actual Value =  30:LastMkt = XTKS**<br/>
+PASS::**Expected Value =  151:LeavesQty = 0,  Actual Value =  151:LeavesQty = 0**<br/>
+PASS::**Expected Value =  14:CumQty = 20,  Actual Value =  14:CumQty = 20**<br/>
+PASS::**Expected Value =  6:AvgPx = 10,  Actual Value =  6:AvgPx = 10**<br/>
+PASS::**Expected Value =  75:TradeDate = 20180402,  Actual Value =  75:TradeDate = 20180402**<br/>
+PASS::**Expected Value =  16586:WireProtocolVersion = FIX.4.3,  Actual Value =  16586:WireProtocolVersion = FIX.4.3**<br/>
+***********Order Blotter::Open Orders / Trades::Execution Report (fill) received::Message Verification END***********<br/>
+***********Order Blotter::Open Orders / Trades::System Generated NetMoney::Message Verification START***********<br/>
+PASS::**Expected Value =  8:BeginString = FIX.4.3,  Actual Value =  8:BeginString = FIX.4.3**<br/>
+PASS::**Expected Value =  35:MsgType = 8,  Actual Value =  35:MsgType = 8**<br/>
+PASS::**Expected Value =  49:SenderCompID = CGMIDMA,  Actual Value =  49:SenderCompID = CGMIDMA**<br/>
+PASS::**Expected Value =  128:DeliverToCompID = RegEQMCGBP,  Actual Value =  128:DeliverToCompID = RegEQMCGBP**<br/>
+PASS::**Expected Value =  34:MsgSeqNum = 0,  Actual Value =  34:MsgSeqNum = 0**<br/>
+PASS::**Expected Value =  43:PossDupFlag = N,  Actual Value =  43:PossDupFlag = N**<br/>
+PASS::**Expected Value =  97:PossResend = N,  Actual Value =  97:PossResend = N**<br/>
+PASS::**Expected Value =  37:OrderID = Ref033009431,  Actual Value =  37:OrderID = Ref033009431**<br/>
+PASS::**Expected Value =  11:ClOrdID = OID2018033009412,  Actual Value =  11:ClOrdID = OID2018033009412**<br/>
+PASS::**Expected Value =  150:ExecType = B,  Actual Value =  150:ExecType = B**<br/>
+PASS::**Expected Value =  39:OrdStatus = B,  Actual Value =  39:OrdStatus = B**<br/>
+PASS::**Expected Value =  64:SettlDate = 20180402,  Actual Value =  64:SettlDate = 20180402**<br/>
+PASS::**Expected Value =  55:Symbol = JP3592200004,  Actual Value =  55:Symbol = JP3592200004**<br/>
+PASS::**Expected Value =  48:SecurityID = JP3592200004,  Actual Value =  48:SecurityID = JP3592200004**<br/>
+PASS::**Expected Value =  22:SecurityIDSource = 4,  Actual Value =  22:SecurityIDSource = 4**<br/>
+PASS::**Expected Value =  460:Product = 5,  Actual Value =  460:Product = 5**<br/>
+PASS::**Expected Value =  167:SecurityType = CS,  Actual Value =  167:SecurityType = CS**<br/>
+PASS::**Expected Value =  54:Side = 2,  Actual Value =  54:Side = 2**<br/>
+PASS::**Expected Value =  38:OrderQty = 20,  Actual Value =  38:OrderQty = 20**<br/>
+PASS::**Expected Value =  15:Currency = JPY,  Actual Value =  15:Currency = JPY**<br/>
+PASS::**Expected Value =  59:TimeInForce = 6,  Actual Value =  59:TimeInForce = 6**<br/>
+PASS::**Expected Value =  32:LastQty = 0,  Actual Value =  32:LastQty = 0**<br/>
+PASS::**Expected Value =  31:LastPx = 0,  Actual Value =  31:LastPx = 0**<br/>
+PASS::**Expected Value =  30:LastMkt = XTKS,  Actual Value =  30:LastMkt = XTKS**<br/>
+PASS::**Expected Value =  151:LeavesQty = 0,  Actual Value =  151:LeavesQty = 0**<br/>
+PASS::**Expected Value =  6:AvgPx = 10,  Actual Value =  6:AvgPx = 10**<br/>
+PASS::**Expected Value =  424:DayOrderQty = 20,  Actual Value =  424:DayOrderQty = 20**<br/>
+PASS::**Expected Value =  425:DayCumQty = 20,  Actual Value =  425:DayCumQty = 20**<br/>
+PASS::**Expected Value =  75:TradeDate = 20180402,  Actual Value =  75:TradeDate = 20180402**<br/>
+PASS::**Expected Value =  12:Commission = 1,  Actual Value =  12:Commission = 1**<br/>
+PASS::**Expected Value =  381:GrossTradeAmt = 200,  Actual Value =  381:GrossTradeAmt = 200**<br/>
+PASS::**Expected Value =  16586:WireProtocolVersion = FIX.4.3,  Actual Value =  16586:WireProtocolVersion = FIX.4.3**<br/>
+***********Order Blotter::Open Orders / Trades::System Generated NetMoney::Message Verification END***********<br/>
+***********Order Blotter::GTR Trades::Order Single::Message Verification START***********<br/>
+PASS::**Expected Value =  8:BeginString = FIX.4.4,  Actual Value =  8:BeginString = FIX.4.4**<br/>
+PASS::**Expected Value =  35:MsgType = D,  Actual Value =  35:MsgType = D**<br/>
+PASS::**Expected Value =  49:SenderCompID = OTM-SP,  Actual Value =  49:SenderCompID = OTM-SP**<br/>
+PASS::**Expected Value =  56:TargetCompID = SINGLEPIPE,  Actual Value =  56:TargetCompID = SINGLEPIPE**<br/>
+PASS::**Expected Value =  97:PossResend = Y,  Actual Value =  97:PossResend = Y**<br/>
+PASS::**Expected Value =  1:Account = 50000051,  Actual Value =  1:Account = 50000051**<br/>
+FAIL::**********Expected Value =  64:SettlDate = 20180402,,  Actual Value = 64:SettlDate = 20180403**********<br/>
+PASS::**Expected Value =  55:Symbol = HKDJPY,  Actual Value =  55:Symbol = HKDJPY**<br/>
+PASS::**Expected Value =  200:MaturityMonthYear = BROKEN,  Actual Value =  200:MaturityMonthYear = BROKEN**<br/>
+PASS::**Expected Value =  54:Side = 2,  Actual Value =  54:Side = 2**<br/>
+PASS::**Expected Value =  38:OrderQty = 199,  Actual Value =  38:OrderQty = 199**<br/>
+PASS::**Expected Value =  40:OrdType = 1,  Actual Value =  40:OrdType = 1**<br/>
+PASS::**Expected Value =  15:Currency = JPY,  Actual Value =  15:Currency = JPY**<br/>
+PASS::**Expected Value =  59:TimeInForce = 0,  Actual Value =  59:TimeInForce = 0**<br/>
+PASS::**Expected Value =  847:TargetStrategy = 3000,  Actual Value =  847:TargetStrategy = 3000**<br/>
+PASS::**Expected Value =  848:TargetStrategyParameters = 200=QUOTED,  Actual Value =  848:TargetStrategyParameters = 200=QUOTED**<br/>
+PASS::**Expected Value =  16586:WireProtocolVersion = FIX.4.4,  Actual Value =  16586:WireProtocolVersion = FIX.4.4**<br/>
+***********Order Blotter::GTR Trades::Order Single::Message Verification END***********<br/>
+FAIL:: Message event is not displayed to verify messages for: Order Blotter::GTR Trades::Calculated / Pending FX Confirmation<br/>
+PASS:: Clicked on the Sub Tab, Settlements<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018033009412<br/>
+PASS:: Clicked on the tool bar button, Manual Settlement<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2018033009412<br/>
+*************************************  CLIENT USER/ INITIAL USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>449</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::1, {Testcaseid=TC001, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Sell, Quantity=10, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Market, TimeInForce=Day, AccountId=50000030, MessageSheetName=SELLDAYMKT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=, ExecutionPrice=10}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1554132505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1554132505'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::2, {Testcaseid=TC002, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Sell, Quantity=20, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Market, TimeInForce=Good Till Date, AccountId=50000030, MessageSheetName=SELLGTDMKT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=, ExecutionPrice=10}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace469383315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace469383315'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::3, {Testcaseid=TC003, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Sell, Quantity=30, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Limit, TimeInForce=Good Till Cancel, AccountId=50000030, MessageSheetName=SELLGTCLIMIT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=12.25, ExecutionPrice=12.25}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1030191317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1030191317'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::4, {Testcaseid=TC004, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Buy, Quantity=40, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Limit, TimeInForce=Day, AccountId=50000030, MessageSheetName=BUYDAYLIMIT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=11.25, ExecutionPrice=11.25}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1081126121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1081126121'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::5, {Testcaseid=TC005, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Buy, Quantity=50, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Market, TimeInForce=Good Till Date, AccountId=50000030, MessageSheetName=BUYGTDMKT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=, ExecutionPrice=10}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1946962024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1946962024'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_CGMDropCopy()'><b>CITI_Equities_CGMDropCopy</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_CGMDropCopy:::6, {Testcaseid=TC006, Customer=RegEQDropCopyFIX3, FullCustomer=RegEQCGMDropCopyClientFIX3, BuySell=Buy, Quantity=40, SecurityId=US19249J1097, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM Drop Copy, OrderType=Limit, TimeInForce=Good Till Cancel, AccountId=50000030, MessageSheetName=BUYGTCLIMIT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=9.25, ExecutionPrice=9.25}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443401706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443401706'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@fad74ee</td></tr>
+</table><p>
+</body>
+</html>

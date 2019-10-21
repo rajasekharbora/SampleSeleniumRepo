@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<testdata>
+
+   <envrionment envtype="QA" execute="Yes">
+      <Url>http://coebnsqa:81/home/AWInternationalBanking/app/start</Url>
+      <Browser>Chrome</Browser>
+      <Timeout>60_4</Timeout>
+   </envrionment>
+   
+       
+     
+</testdata>

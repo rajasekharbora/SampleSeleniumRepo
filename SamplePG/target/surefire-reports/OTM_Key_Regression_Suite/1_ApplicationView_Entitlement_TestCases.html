@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>TestNG:  1:ApplicationView_Entitlement_TestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>1:ApplicationView_Entitlement_TestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 29 07:15:15 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>944 seconds (944404 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ApplicationAccess()'><b>CITI_Funds_Entitlement_ApplicationAccess</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for Checking the application access<br/>
+<a href="#Output-1856158867" onClick='toggleBox("Output-1856158867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1856158867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1856158867">
+PASS:: User Login into OTM is successful - User ID :: generali4<br/>
+PASS:: "Fund Blotter"and"Fund Transfer Blotter"are available for the user<br/>
+PASS:: "CIS Open Fund Blotter"and"CIS Final Fund Blotter"are not available for the user<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: In Fund Blotter, User is not seeing the buttons which is expected for Funds View User:: 'Request Cancel','Cancel Order','Delete Order','Modify Order','Reprocess Order','Request Order Modification','Accept Cancel Request','Rejct Cancel Request','Approve Client Cancel','Reject Client Cancel'<br/>
+PASS:: Only "Generali"Customer is present in the list<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: In Fund Transfer Blotter, User is not seeing the buttons which is expected for Funds View User:: 'Request Cancel','Cancel Order','Delete Order','Modify Order','Reprocess Order','Request Order Modification','Accept Cancel Request','Rejct Cancel Request','Approve Client Cancel','Reject Client Cancel'<br/>
+PASS:: Only "Generali"Customer is present in the list<br/>
+PASS::Reference --> Accounts is Clicked<br/>
+PASS:: In Fund Transfer Blotter, User is not seeing the buttons which is expected for Funds View User:: 'Add Account','Add Safekeeping','Add SubAccount','Modify Account','Approve Account'<br/>
+PASS:: Only "Generali"Customer is present in the list<br/>
+PASS::Reference --> Funds is Clicked<br/>
+PASS:: User is not seeing the buttons which is expected for Funds View User<br/>
+PASS::Reference --> FundSettle Accounts is Clicked<br/>
+PASS:: In FundSettle Accounts, User is not seeing the buttons which is expected for Funds View User:: 'Add Account','Clone Fund','Modify Account','Approve Pending Account'<br/>
+PASS:: Only "Generali"Customer is present in the list<br/>
+</div>
+</td>
+<td></td>
+<td>196</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Dublin()'><b>CITI_Funds_Entitlement_OperationsUser_Dublin</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Dublin:::1, {Testcaseid=TC001, CleintUser=Yes, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, OrderType=Redemption, OrderRegion=CIS, CustomerAccount=6000002 - 6000001000123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 - RegCIS- Secore SafekeepingAccount1, Shares=, Cash=100, Payment=, AccountAtTA=123456, SheetName=REDMCASH, ContractReference=test123, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+<a href="#Output-1543518287" onClick='toggleBox("Output-1543518287", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1543518287" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1543518287">
+INFO::Test Data Used::
+{Testcaseid=TC001, CleintUser=Yes, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, OrderType=Redemption, OrderRegion=CIS, CustomerAccount=6000002 - 6000001000123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 - RegCIS- Secore SafekeepingAccount1, Shares=, Cash=100, Payment=, AccountAtTA=123456, SheetName=REDMCASH, ContractReference=test123, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+PASS:: User Login into OTM is successful - User ID :: ai10<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "REGFUNDSWIFTCIS"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032907201"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Redemption"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "INE220B14306"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "6000002 - 6000001000123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 - RegCIS- Secore SafekeepingAccount1"<br/>
+PASS::Fund Order Entry Screen :: Entered Cash values as "100"<br/>
+PASS::Fund Order Entry Screen :: Entered AccountAtTA values as "123456"<br/>
+PASS::Fund Order Entry Screen :: Entered Document due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested Value date values as "29/03/2018"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032907201<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032907201<br/>
+PASS::Current Order status is  "Pending Approval"  for the Order ID/Customer Ref :: OID2018032907201<br/>
+</div>
+</td>
+<td></td>
+<td>130</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Hk()'><b>CITI_Funds_Entitlement_OperationsUser_Hk</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Hk:::4, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=AIGPF001, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=11.33, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+<a href="#Output-1049590050" onClick='toggleBox("Output-1049590050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1049590050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1049590050">
+INFO::Test Data Used::
+{Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=AIGPF001, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=11.33, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+PASS:: User Login into OTM is successful - User ID :: hk1<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "Generali"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032907250"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Subscription"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "AIGPF001"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "6411534002b - Test 2 Registration - Generali Test 2"<br/>
+PASS::Fund Order Entry Screen :: Entered Shares values as "11.33"<br/>
+PASS::Fund Order Entry Screen :: Entered AccountAtTA values as "123456"<br/>
+PASS::Fund Order Entry Screen :: Entered Document due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested Value date values as "29/03/2018"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032907250<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032907250<br/>
+PASS::Current Order status is  "Pending Approval"  for the Order ID/Customer Ref :: OID2018032907250<br/>
+</div>
+</td>
+<td></td>
+<td>138</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Sing()'><b>CITI_Funds_Entitlement_OperationsUser_Sing</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Sing:::3, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE532F14DF9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=12.11, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+<a href="#Output-635288507" onClick='toggleBox("Output-635288507", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-635288507" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-635288507">
+INFO::Test Data Used::
+{Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE532F14DF9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=12.11, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+PASS:: User Login into OTM is successful - User ID :: cissing<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "Generali"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032907270"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Subscription"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "INE532F14DF9"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "6411534002b - Test 2 Registration - Generali Test 2"<br/>
+PASS::Fund Order Entry Screen :: Entered Shares values as "12.11"<br/>
+PASS::Fund Order Entry Screen :: Entered AccountAtTA values as "123456"<br/>
+PASS::Fund Order Entry Screen :: Entered Document due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested Value date values as "29/03/2018"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032907270<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032907270<br/>
+PASS::Current Order status is  "Pending Approval"  for the Order ID/Customer Ref :: OID2018032907270<br/>
+</div>
+</td>
+<td></td>
+<td>139</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Tampa()'><b>CITI_Funds_Entitlement_OperationsUser_Tampa</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Tampa:::2, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE549A14DD9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=13.22, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+<a href="#Output-300604602" onClick='toggleBox("Output-300604602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-300604602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-300604602">
+INFO::Test Data Used::
+{Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE549A14DD9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=13.22, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}<br/>
+PASS:: User Login into OTM is successful - User ID :: tampa1<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "Generali"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032907222"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Subscription"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "INE549A14DD9"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "6411534002b - Test 2 Registration - Generali Test 2"<br/>
+PASS::Fund Order Entry Screen :: Entered Shares values as "13.22"<br/>
+PASS::Fund Order Entry Screen :: Entered AccountAtTA values as "123456"<br/>
+PASS::Fund Order Entry Screen :: Entered Document due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested due date values as "29/03/2018"<br/>
+PASS::Fund Order Entry Screen :: Entered Requested Value date values as "29/03/2018"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032907222<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032907222<br/>
+PASS::Current Order status is  "Pending Approval"  for the Order ID/Customer Ref :: OID2018032907222<br/>
+</div>
+</td>
+<td></td>
+<td>147</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ViewAccessLogin()'><b>CITI_Funds_Entitlement_ViewAccessLogin</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for checking application access<br/>
+<a href="#Output-1168420930" onClick='toggleBox("Output-1168420930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168420930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168420930">
+PASS:: User Login into OTM is successful - User ID :: generali4<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: In Fund Blotter, User is not seeing the buttons which is expected for View User:: 'Request Cancel','Cancel Order','Delete Order','Modify Order','Reprocess Order','Request Order Modification','Accept Cancel Request','Rejct Cancel Request','Approve Client Cancel','Reject Client Cancel'<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>testcases.workflows.FundOrderFlowTests@305fd85d</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Funds_Equities_Entitlement_ApplicationAccess()'><b>CITI_Funds_Equities_Entitlement_ApplicationAccess</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Test method: This test case is for checking application access for 'tviewonly' user<br/>
+<a href="#Output-2019157894" onClick='toggleBox("Output-2019157894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2019157894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2019157894">
+PASS:: User Login into OTM is successful - User ID :: tviewonly1<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: In Order Blotter, User is not seeing the buttons which is expected for View User:: 'Approve Order' ,'Cancel Request' ,'Replace Request' ,'Clone Order','Reject Order' ,'Cancel Order' ,'Accept Order'<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: In Fund Blotter, User is not seeing the buttons which is expected for View User:: 'Request Cancel','Cancel Order','Delete Order','Modify Order','Reprocess Order','Request Order Modification','Accept Cancel Request','Rejct Cancel Request','Approve Client Cancel','Reject Client Cancel'<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>testcases.workflows.EquityWorkFlowsTests@458c1321</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_OrderMgt_Audit_Reg_ViewAccessUser()'><b>CITI_OrderMgt_Audit_Reg_ViewAccessUser</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br/>
+<a href="#Output-1605988985" onClick='toggleBox("Output-1605988985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1605988985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1605988985">
+PASS:: User Login into OTM is successful - User ID :: lch4<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: In Order Blotter, User is not seeing the buttons which is expected for View User:: 'Approve Order' ,'Cancel Request' ,'Replace Request' ,'Clone Order','Reject Order' ,'Cancel Order' ,'Accept Order'<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>testcases.workflows.EquityWorkFlowsTests@458c1321</td></tr>
+</table><p>
+</body>
+</html>

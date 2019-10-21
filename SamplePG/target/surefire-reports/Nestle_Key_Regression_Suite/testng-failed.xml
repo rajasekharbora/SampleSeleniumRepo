@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Nestle_Key_Regression_Suite]">
+  <parameter name="ENVType" value="COEQA"/>
+  <listeners>
+    <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+  </listeners>
+  <test name="1:SOAPUI_PreOrdersTestScript_OrderPlaceNoException(failed)">
+    <classes>
+      <class name="testcases.workflows.TerritoryManagementTest">
+        <methods>
+          <include name="setup_suite_initials"/>
+          <include name="beforeClass"/>
+          <include name="callBatchForEmailReports"/>
+          <include name="ViewMyCases"/>
+        </methods>
+      </class> <!-- testcases.workflows.TerritoryManagementTest -->
+    </classes>
+  </test> <!-- 1:SOAPUI_PreOrdersTestScript_OrderPlaceNoException(failed) -->
+</suite> <!-- Failed suite [Nestle_Key_Regression_Suite] -->

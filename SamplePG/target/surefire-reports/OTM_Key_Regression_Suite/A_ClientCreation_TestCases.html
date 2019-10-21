@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>TestNG:  A:ClientCreation_TestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>A:ClientCreation_TestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 02 19:15:05 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>840 seconds (840773 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.ClientSetupTests.CITI_Equity_Client_Creation()'><b>CITI_Equity_Client_Creation</b><br>Test class: testcases.workflows.ClientSetupTests<br>Parameters: CITI_Equity_Client_Creation:::1, {ProductSupported=Equity, isActive=Yes, CreatedDate=, RegressionCycle=}<br/>
+<a href="#Output-731243659" onClick='toggleBox("Output-731243659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-731243659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-731243659">
+PASS:: User Login into OTM is successful - User ID :: jurenr<br/>
+INFO::Test Data Used::
+{ProductSupported=Equity, isActive=Yes, CreatedDate=, RegressionCycle=}<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, E2C Client Setup<br/>
+PASS::E2C Client creation Screen :: ParentClientName value entered as Parent2018010219195<br/>
+PASS::E2C Client creation Screen :: ClientName value entered as AUTOEQ2018010219244<br/>
+PASS::E2C Client creation Screen :: ClientShortName value entered as AUTOEQ2018010219244<br/>
+PASS::E2C Client creation Screen :: ClientID value entered as 201801021924<br/>
+PASS::E2C Client creation Screen :: GFCID value entered as 201801021924<br/>
+PASS::E2C Client creation Screen :: ProductSupported value entered as Equity<br/>
+PASS::E2C Client creation Screen :: ClientType value entered as Retail<br/>
+PASS::E2C Client creation Screen :: Invest1BIC value entered as BFIMIM56XXX<br/>
+PASS::E2C Client(Fixed Income) created successfully with Client Name as :: AUTOEQ2018010219244<br/>
+PASS:: OTM User Login is successful :: subrakv<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, E2C Client Setup<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: AUTOEQ2018010219244<br/>
+PASS:: Popup Window, Clicked on the button, "Approve"<br/>
+PASS:: OTM User Login is successful :: subrakv<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, E2C Client Setup<br/>
+PASS:: Successfully applied the filter with, Client Name::AUTOEQ2018010219244<br/>
+PASS::Current Order status is  "In Effect"  for the Order ID/Customer Ref :: AUTOEQ2018010219244<br/>
+******E2C Client blotter, East Panel Order Details Verification START******<br/>
+PASS::**Client Parameters::Parent/Client Organization** Expected Value = Parent2018010219195, Actual Value = Parent2018010219195<br/>
+PASS::**Client Parameters::Customer Name** Expected Value = AUTOEQ2018010219244, Actual Value = AUTOEQ2018010219244<br/>
+PASS::**Client Parameters::Customer Short Name** Expected Value = AUTOEQ2018010219244, Actual Value = AUTOEQ2018010219244<br/>
+PASS::**Client Parameters::Customer ID/Comp ID** Expected Value = 201801021924, Actual Value = 201801021924<br/>
+PASS::**Client Parameters::GFCID** Expected Value = 201801021924, Actual Value = 201801021924<br/>
+PASS::**Client Parameters::Active** Expected Value = Yes, Actual Value = Yes<br/>
+PASS::**Client Parameters::Product Supported** Expected Value = Equity, Actual Value = Equity<br/>
+PASS::**Client Parameters::Client Type** Expected Value = RETAIL000000, Actual Value = RETAIL000000<br/>
+PASS::**Order Processing::GT Handling** Expected Value = Auto Resubmit/Cancel GT, Actual Value = Auto Resubmit/Cancel GT<br/>
+PASS::**Post Trade Processing::Generate SI** Expected Value = Yes, Actual Value = Yes<br/>
+PASS::**Post Trade Processing::Send SI to InvestOne** Expected Value = Yes, Actual Value = Yes<br/>
+PASS::**Post Trade Processing::InvestOne Sender BIC** Expected Value = BFIMIM56XXX, Actual Value = BFIMIM56XXX<br/>
+PASS::**Post Trade Processing::Primary Middle Office** Expected Value = E2C_1 Middle Office Organization, Actual Value = E2C_1 Middle Office Organization<br/>
+******E2C Client blotter, East Panel Order Details Verification END******<br/>
+PASS::E2C Client  modified successfully with Client type as :: Investor<br/>
+PASS:: OTM User Login is successful :: jurenr<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, E2C Client Setup<br/>
+PASS:: Successfully applied the filter with, Client Name::AUTOEQ2018010219244<br/>
+PASS::Current Order status is  "In Effect/Pending Mod"  for the Order ID/Customer Ref :: AUTOEQ2018010219244<br/>
+PASS:: Popup Window, Clicked on the button, "Approve"<br/>
+******E2C Client blotter, East Panel Order Details Verification START******<br/>
+PASS::**Client Parameters::Client Type** Expected Value = RETAILINVESTOR00000, Actual Value = RETAILINVESTOR00000<br/>
+******E2C Client blotter, East Panel Order Details Verification END******<br/>
+PASS::Current Order status is  "In Effect"  for the Order ID/Customer Ref :: AUTOEQ2018010219244<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Client Broker Trading setup created successfully with Exchange as :: GB - London Stock Exchange<br/>
+</div>
+</td>
+<td></td>
+<td>306</td>
+<td>testcases.workflows.ClientSetupTests@4493d195</td></tr>
+<tr>
+<td title='testcases.workflows.ClientSetupTests.CITI_Equity_Parent_Client_Creation()'><b>CITI_Equity_Parent_Client_Creation</b><br>Test class: testcases.workflows.ClientSetupTests<br/>
+<a href="#Output-294111720" onClick='toggleBox("Output-294111720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-294111720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-294111720">
+PASS:: User Login into OTM is successful - User ID :: jurenr<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Parent Client Setup<br/>
+PASS::Parent Client creation Screen :: ParentLongName value entered as Parent2018010219195<br/>
+PASS::Parent Client creation Screen :: ParentShortName value entered as Parent2018010219195<br/>
+PASS::Parent Client creation Screen :: GFCID value entered as 201801021919<br/>
+PASS::Parent Client creation Screen :: GFPID value entered as 201801021919<br/>
+PASS::Parent Client creation Screen :: Description value entered as Description of Parent client 201801021919<br/>
+PASS::Parent Client  created successfully with Parent Name as :: Parent2018010219195<br/>
+PASS:: OTM User Login is successful :: subrakv<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Parent Client Setup<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: Parent2018010219195<br/>
+PASS:: Popup Window, Clicked on the button, "Approve"<br/>
+PASS:: OTM User Login is successful :: subrakv<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Parent Client Setup<br/>
+PASS:: Successfully applied the filter with, Name::Parent2018010219195<br/>
+PASS::Current Order status is  "In Effect"  for the Order ID/Customer Ref :: Parent2018010219195<br/>
+******Parent Client blotter, East Panel Order Details Verification START******<br/>
+PASS::**Parent Client Information::Name** Expected Value = Parent2018010219195, Actual Value = Parent2018010219195<br/>
+PASS::**Parent Client Information::Short Name** Expected Value = Parent2018010219195, Actual Value = Parent2018010219195<br/>
+PASS::**Parent Client Information::GFCID** Expected Value = 201801021919, Actual Value = 201801021919<br/>
+PASS::**Parent Client Information::GFPID** Expected Value = 201801021919, Actual Value = 201801021919<br/>
+PASS::**Parent Client Information::Active** Expected Value = Yes, Actual Value = Yes<br/>
+PASS::**Parent Client Information::Description** Expected Value = Description of Parent client 201801021919, Actual Value = Description of Parent client 201801021919<br/>
+******Parent Client blotter, East Panel Order Details Verification END******<br/>
+PASS::Parent Client creation Screen :: Description value modified as Description of Parent client201801021922 Version 2<br/>
+PASS::Parent Client  modified successfully with Description as :: Description of Parent client201801021922 Version 2<br/>
+PASS:: OTM User Login is successful :: jurenr<br/>
+PASS::Administration --> Client Setup is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Parent Client Setup<br/>
+PASS:: Successfully applied the filter with, Name::Parent2018010219195<br/>
+PASS::Current Order status is  "In Effect/Pending Mod"  for the Order ID/Customer Ref :: Parent2018010219195<br/>
+PASS:: Popup Window, Clicked on the button, "Approve"<br/>
+******Parent Client blotter, East Panel Order Details Verification START******<br/>
+PASS::**Parent Client Information::Description** Expected Value = Description of Parent client201801021922 Version 2, Actual Value = Description of Parent client201801021922 Version 2<br/>
+******Parent Client blotter, East Panel Order Details Verification END******<br/>
+PASS::Current Order status is  "In Effect"  for the Order ID/Customer Ref :: Parent2018010219195<br/>
+</div>
+</td>
+<td></td>
+<td>290</td>
+<td>testcases.workflows.ClientSetupTests@4493d195</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Funds_Equities_Entitlement_ApplicationAccess()'><b>CITI_Funds_Equities_Entitlement_ApplicationAccess</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Test method: This test case is for checking application access for 'tviewonly' user<br/>
+<a href="#Output-79644918" onClick='toggleBox("Output-79644918", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-79644918" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-79644918">
+PASS:: User Login into OTM is successful - User ID :: tviewonly1<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: In Order Blotter, User is not seeing the buttons which is expected for View User:: 'Approve Order' ,'Cancel Request' ,'Replace Request' ,'Clone Order','Reject Order' ,'Cancel Order' ,'Accept Order'<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: In Fund Blotter, User is not seeing the buttons which is expected for View User:: 'Request Cancel','Cancel Order','Delete Order','Modify Order','Reprocess Order','Request Order Modification','Accept Cancel Request','Rejct Cancel Request','Approve Client Cancel','Reject Client Cancel'<br/>
+</div>
+</td>
+<td></td>
+<td>144</td>
+<td>testcases.workflows.EquityWorkFlowsTests@57e1b0c</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_OrderMgt_Audit_Reg_ViewAccessUser()'><b>CITI_OrderMgt_Audit_Reg_ViewAccessUser</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br/>
+<a href="#Output-1261198850" onClick='toggleBox("Output-1261198850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261198850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261198850">
+PASS:: User Login into OTM is successful - User ID :: lch4<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: In Order Blotter, User is not seeing the buttons which is expected for View User:: 'Approve Order' ,'Cancel Request' ,'Replace Request' ,'Clone Order','Reject Order' ,'Cancel Order' ,'Accept Order'<br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>testcases.workflows.EquityWorkFlowsTests@57e1b0c</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <documentTitle>My Custom Browser Title</documentTitle> <!-- This title will be displayed as browser title for the page -->
+        <reportName>OTM Automation Report</reportName>  <!-- This will be your report heading -->
+        <reportHeadline>OTM Automation Summary of Test Results</reportHeadline>
+	<theme>dark</theme>
+    </configuration>
+</extentreports>

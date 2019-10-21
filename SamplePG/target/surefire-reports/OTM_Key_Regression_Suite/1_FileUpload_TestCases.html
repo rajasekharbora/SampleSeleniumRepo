@@ -1,0 +1,340 @@
+<html>
+<head>
+<title>TestNG:  1:FileUpload_TestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>1:FileUpload_TestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 17 10:46:02 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>442 seconds (442345 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.OrdersFileUploadTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.OrdersFileUploadTests<br>Parameters: [TestResult name=CITI_Equities_Order_File_Upload status=FAILURE method=OrdersFileUploadTests.CITI_Equities_Order_File_Upload()[pri:0, instance:testcases.workflows.OrdersFileUploadTests@1f57539] output=PASS:: User Login into OTM is successful - User ID :: autoregequity1]<br/>
+<a href="#Output-737104370" onClick='toggleBox("Output-737104370", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-737104370" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-737104370">
+Modal dialog present: 
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30873/, javascriptEnabled=true, ignoreProtectedModeSettings=false, platformName=WINDOWS, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8d6f76ff-69e0-4b87-b079-16acc0256d60<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:142)
+	at utilities.webdriverfunctions.WebDriverMethods.update_result_quit_browser(WebDriverMethods.java:150)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:82)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737104370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737104370'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:142)
+	at utilities.webdriverfunctions.WebDriverMethods.update_result_quit_browser(WebDriverMethods.java:150)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.OrdersFileUploadTests@1f57539</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.OrdersFileUploadTests.CITI_Equities_Order_File_Upload()'><b>CITI_Equities_Order_File_Upload</b><br>Test class: testcases.workflows.OrdersFileUploadTests<br/>
+<a href="#Output-1718322084" onClick='toggleBox("Output-1718322084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1718322084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1718322084">
+PASS:: User Login into OTM is successful - User ID :: autoregequity1<br/>
+PASS::Administration --> File Upload is Clicked<br/>
+PASS::File Upload Screen :: Client value entered as "Auto Reg Equity Client FIX1"<br/>
+PASS::File Upload Screen :: File Type value entered as "Equity Order "<br/>
+Modal dialog present: 
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30873/, javascriptEnabled=true, ignoreProtectedModeSettings=false, platformName=WINDOWS, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8d6f76ff-69e0-4b87-b079-16acc0256d60
+*** Element info: {Using=xpath, value=//span[text()='Submit']}<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.actions_double_click(WebDriverMethods.java:398)
+	at pages.pageclasses.OrderEntryPage.equityOrderFileUpload(OrderEntryPage.java:897)
+	at testcases.workflows.OrdersFileUploadTests.CITI_Equities_Order_File_Upload(OrdersFileUploadTests.java:84)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1718322084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1718322084'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.actions_double_click(WebDriverMethods.java:398)
+	at pages.pageclasses.OrderEntryPage.equityOrderFileUpload(OrderEntryPage.java:897)
+	at testcases.workflows.OrdersFileUploadTests.CITI_Equities_Order_File_Upload(OrdersFileUploadTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>42</td>
+<td>testcases.workflows.OrdersFileUploadTests@1f57539</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.OrdersFileUploadTests.CITI_USMF_Funds_Order_File_Upload()'><b>CITI_USMF_Funds_Order_File_Upload</b><br>Test class: testcases.workflows.OrdersFileUploadTests<br/>
+<a href="#Output-2084559714" onClick='toggleBox("Output-2084559714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2084559714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2084559714">
+PASS:: User Login into OTM is successful - User ID :: jurenr<br/>
+PASS::Reference --> Holding Statements is Clicked<br/>
+PASS:: Successfully applied the filter with, Security ID::INE306L01010,Customer::USMFBLG1,Statement Date::16/11/2017<br/>
+PASS:: Swift Message is loaded successfully::0000 00GCNCBEXXXMUT00000
+1827 24CITIUS33AXXX08362
+535 02
+:16R:GENL
+:28E:1/MORE
+:98A::STAT//20171116
+:20C::SEME//REG201711171047
+:23G:NEWM
+:98A::PREP//20171117
+:22F::SFRE//DAIL
+:22F::CODE//COMP
+:22F::STTY//CUST
+:22F::STBA//SETT
+:97A::SAFE//2000001
+:17B::ACTI//Y
+:17B::CONS//N
+:16S:GENL
+:16R:SUBSAFE
+:94B::SAFE//SHHE
+:16R:FIN
+:35B:ISIN INE306L01010
+:22H::CAOP//DRIP
+:93B::AGGR//UNIT/10000,
+:93B::AVAI/UNIT/10000,
+:93B::NAVL//UNIT/0,
+:16R:SUBBAL
+:93C::NOMI//UNIT/AVAI/10000,
+:94B::PRIC//VEND
+:90B::MRKT//ACTU/USD10,
+:98A::PRIC//20171116
+:70C::SUBB///ST/0
+:16S:SUBBAL
+:16R:SUBBAL3
+:93C::NOMI//UNIT/AVAI/10000,
+:94B::PRIC//VEND
+:90B::MRKT//ACTU/USD10,
+:98A::PRIC//20171116
+:70C::SUBB///ST/1
+:16S:SUBBAL
+:16S:FIN
+:16S:SUBSAFE
+:16R:ADDINFO
+:19A::HOLP//USD150,
+:16S:ADDINFO
+-<br/>
+PASS:: Successfully applied the filter with, Security ID::543487136,Customer::USMFBLG1,Statement Date::16/11/2017<br/>
+PASS:: Swift Message is loaded successfully::0000 00GCNCBEXXXMUT00000
+1827 24CITIUS33AXXX08362
+535 02
+:16R:GENL
+:28E:1/MORE
+:98A::STAT//20171116
+:20C::SEME//REG201711171049
+:23G:NEWM
+:98A::PREP//20171117
+:22F::SFRE//DAIL
+:22F::CODE//COMP
+:22F::STTY//CUST
+:22F::STBA//SETT
+:97A::SAFE//2000001
+:17B::ACTI//Y
+:17B::CONS//N
+:16S:GENL
+:16R:SUBSAFE
+:94B::SAFE//SHHE
+:16R:FIN
+:35B:/US/543487136
+:22H::CAOP//CASH
+:93B::AGGR//UNIT/10000,
+:93B::AVAI/UNIT/10000,
+:93B::NAVL//UNIT/0,
+:16R:SUBBAL
+:93C::NOMI//UNIT/AVAI/10000,
+:94B::PRIC//VEND
+:90B::MRKT//ACTU/USD10,
+:98A::PRIC//20171116
+:70C::SUBB///ST/0
+:16S:SUBBAL
+:16R:SUBBAL3
+:93C::NOMI//UNIT/AVAI/10000,
+:94B::PRIC//VEND
+:90B::MRKT//ACTU/USD10,
+:98A::PRIC//20171116
+:70C::SUBB///ST/1
+:16S:SUBBAL
+:16S:FIN
+:16S:SUBSAFE
+:16R:ADDINFO
+:19A::HOLP//USD150,
+:16S:ADDINFO
+-<br/>
+PASS:: OTM User Login is successful :: usmfblg1<br/>
+PASS::Administration --> File Upload is Clicked<br/>
+PASS::File Upload Screen :: Client value entered as "usmfblg1 "<br/>
+PASS::File Upload Screen :: File Type value entered as "Consolidated Fund Order "<br/>
+PASS:: File Upload Screen:: Clicked on the Browse button.<br/>
+PASS:: Selected the local file and clicked on the Submit button.<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Clicked on Files Tab<br/>
+PASS:: Clicked on the Files Tab<br/>
+PASS:: Successfully applied the filter with, File Name::USMF_ORD_ENTRY.csv<br/>
+PASS:: Applied the filter with, File Name::USMF_ORD_ENTRY.csv<br/>
+PASS:: Fund order file uploaded successfully for all the rows provided document::Valid Message Count,4<br/>
+PASS:: Clicked on All Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::20171117160503<br/>
+PASS:: Uploaded File Order ID, 20171117160503, Status is moved to "Pending Cash Check"<br/>
+PASS:: Successfully applied the filter with, Customer Ref::20171117160504<br/>
+PASS:: Uploaded File Order ID, 20171117160504, Status is moved to "Pending Cash Check"<br/>
+PASS:: Successfully applied the filter with, Customer Ref::20171117160505<br/>
+PASS:: Uploaded File Order ID, 20171117160505, Status is moved to "Ready For Placement"<br/>
+PASS:: Successfully applied the filter with, Customer Ref::20171117160506<br/>
+PASS:: Uploaded File Order ID, 20171117160506, Status is moved to "Ready For Placement"<br/>
+</div>
+</td>
+<td></td>
+<td>384</td>
+<td>testcases.workflows.OrdersFileUploadTests@1f57539</td></tr>
+</table><p>
+</body>
+</html>

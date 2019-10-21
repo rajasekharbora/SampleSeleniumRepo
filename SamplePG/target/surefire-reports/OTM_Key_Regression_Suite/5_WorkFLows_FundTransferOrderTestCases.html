@@ -1,0 +1,692 @@
+<html>
+<head>
+<title>TestNG:  5:WorkFLows_FundTransferOrderTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>5:WorkFLows_FundTransferOrderTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 10 07:03:34 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1725 seconds (1725941 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundTransferFlowTests.CITI_Fund_Transfer_Entry()'><b>CITI_Fund_Transfer_Entry</b><br>Test class: testcases.workflows.FundTransferFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Fund_Transfer_Entry:::1, {Testcaseid=TC001, TransferFrom=CIS, TransferTo=CIS, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, FromSafeKeepingAccount=6000002 - RegCIS- Secore SafekeepingAccount1, ToSafeKeepingAccount=10000002 - Reg Fund Safe Account 2, Shares=100, Cash=, Currency=, FROMActATXferAgent=1234567891, TOActATXferAgent=1234567893, SheetName=CISTOCISSHARES, ActualShares=}<br/>
+<a href="#Output-516468676" onClick='toggleBox("Output-516468676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-516468676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-516468676">
+Test Data Used ::   {Testcaseid=TC001, TransferFrom=CIS, TransferTo=CIS, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, FromSafeKeepingAccount=6000002 - RegCIS- Secore SafekeepingAccount1, ToSafeKeepingAccount=10000002 - Reg Fund Safe Account 2, Shares=100, Cash=, Currency=, FROMActATXferAgent=1234567891, TOActATXferAgent=1234567893, SheetName=CISTOCISSHARES, ActualShares=}<br/>
+***************************************   Client User START  ***************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: REGFUNDSWCIS1<br/>
+PASS::Order Entry --> Fund Transfer Entry is Clicked<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Transfer From values as "CIS"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Transfer To values as "CIS"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Customer Ref values as "OID2018031007042"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Safe Keeping Account From value as "6000002 - RegCIS- Secore SafekeepingAccount1"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Account at Transfer Agent From value as "1234567891"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Account at Transfer To Agent  value as "1234567893"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Safe Keeping Account To value as "10000002 - Reg Fund Safe Account 2"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Fund ID value as "INE220B14306"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Shares value as "100"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Requested Dealing Date value as "09/03/2018"<br/>
+Fund Transfer Order is created successfully with Customer Reference ID :: OID2018031007042<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+************** Fund Transfer Blotter --> Deliver, East Panel Order Details Verification START **************<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification END*********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Receive<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+************** Fund Transfer Blotter --> Receive, East Panel Order Details Verification START **************<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Counterparty::SK Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+********* Fund Transfer Blotter --> Receive, East Panel Order Details Verification END*********<br/>
+***************************************   Client User END  ***************************************<br/>
+***************************************  Confirm User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: ai10<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification START *********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification END *********<br/>
+PASS::Fund Transfer Blotter --> All tab, Clicked on the Authorize Transfer button<br/>
+PASS::Authorize Fund Transfer Screen, selected the No for the radio button Bill For Fund Transfer<br/>
+PASS::Current Order status is  "Accepted by OA"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+********* Fund Transfer Blotter --> All, Deliver, East Panel Order Details Verification START *********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Accepted by OA, Actual Value = Accepted by OA<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Accepted by OA, Actual Value = Accepted by OA<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, Deliver, East Panel Order Details Verification END *********<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Receive<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+***************************************  Confirm User END  ***************************************<br/>
+***************************************  Approver User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Receive<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS:: Clicked on the Sub Tab, All<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Settlement"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Clicked on the Sub Tab, Settlement<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+*********Fund Transfer Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Receive<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2018031007042<br/>
+********* Fund Transfer Blotter, Settlement tab, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Counterparty::Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Counterparty::SK Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+********* Fund Transfer Blotter, Settlement tab, East Panel Order Details Verification END*********<br/>
+PASS:: Clicked on the Sub Tab, All<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Deliver<br/>
+Number of Certificate of Delivery Events are:  3<br/>
+Number of MT Message Events are:  3<br/>
+PASS:: Number of Certificate of Delivery and MT messages are equal<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  548 02,  Actual Value =  548 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//542,  Actual Value =  :13A::LINK//542**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007042,  Actual Value =  :20C::RELA//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//PACK,  Actual Value =  :25D::IPRC//PACK**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Deliver::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT546 (DF Confirmation) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  546 02,  Actual Value =  546 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007042,  Actual Value =  :20C::RELA//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :98A::ESET//20180309,  Actual Value =  :98A::ESET//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::ESTT//UNIT/100,,  Actual Value =  :36B::ESTT//UNIT/100,**<br/>
+PASS::**Expected Value =  :97A::SAFE//6000002,  Actual Value =  :97A::SAFE//6000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR/SMPG/TRFD,  Actual Value =  :22F::SETR/SMPG/TRFD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95P::SELL//RFSCISTT,  Actual Value =  :95P::SELL//RFSCISTT**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//RegTransferAgent1,  Actual Value =  :95Q::PSET//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::REAG//RegTransferAgent1,  Actual Value =  :95Q::REAG//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT546 (DF Confirmation) Deliver::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT542 (DF) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CITIGB20AXXX00000,  Actual Value =  0000 00CITIGB20AXXX00000**<br/>
+PASS::**Expected Value =  0000 00GCNCBEXXAXXX00000,  Actual Value =  0000 00GCNCBEXXAXXX00000**<br/>
+PASS::**Expected Value =  542 02,  Actual Value =  542 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::TRRF//OID2018031007042,  Actual Value =  :20C::TRRF//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180309,  Actual Value =  :98A::SETT//20180309**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::SETT//UNIT/100,,  Actual Value =  :36B::SETT//UNIT/100,**<br/>
+PASS::**Expected Value =  :97A::SAFE//6000002,  Actual Value =  :97A::SAFE//6000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::BUYR//UNITTST,  Actual Value =  :95Q::BUYR//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//NEW YORK,  Actual Value =  :95Q::PSET//NEW YORK**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::REAG//UNITTST,  Actual Value =  :95Q::REAG//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT542 (DF) Deliver::Message Verification END***********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007042,Type::Receive<br/>
+Number of Certificate of Delivery Events are:  3<br/>
+Number of MT Message Events are:  3<br/>
+PASS:: Number of Certificate of Delivery and MT messages are equal<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  548 02,  Actual Value =  548 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//540,  Actual Value =  :13A::LINK//540**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007042,  Actual Value =  :20C::RELA//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//PACK,  Actual Value =  :25D::IPRC//PACK**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Receive::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT544 (RF Confirmation) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  544 02,  Actual Value =  544 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007042,  Actual Value =  :20C::RELA//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :98A::ESET//20180309,  Actual Value =  :98A::ESET//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::ESTT//UNIT/100,,  Actual Value =  :36B::ESTT//UNIT/100,**<br/>
+PASS::**Expected Value =  :97A::SAFE//10000002,  Actual Value =  :97A::SAFE//10000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR/SMPG/TRFD,  Actual Value =  :22F::SETR/SMPG/TRFD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95P::BUYR//RFSCISTT,  Actual Value =  :95P::BUYR//RFSCISTT**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//RegTransferAgent1,  Actual Value =  :95Q::PSET//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::DEAG//RegTransferAgent1,  Actual Value =  :95Q::DEAG//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT544 (RF Confirmation) Receive::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT540 (RF) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CITIGB20AXXX00000,  Actual Value =  0000 00CITIGB20AXXX00000**<br/>
+PASS::**Expected Value =  0000 00GCNCBEXXAXXX00000,  Actual Value =  0000 00GCNCBEXXAXXX00000**<br/>
+PASS::**Expected Value =  540 02,  Actual Value =  540 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::TRRF//OID2018031007042,  Actual Value =  :20C::TRRF//OID2018031007042**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180309,  Actual Value =  :98A::SETT//20180309**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::SETT//UNIT/100,,  Actual Value =  :36B::SETT//UNIT/100,**<br/>
+PASS::**Expected Value =  :97A::SAFE//10000002,  Actual Value =  :97A::SAFE//10000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::SELL//UNITTST,  Actual Value =  :95Q::SELL//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//NEW YORK,  Actual Value =  :95Q::PSET//NEW YORK**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::DEAG//UNITTST,  Actual Value =  :95Q::DEAG//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT540 (RF) Receive::Message Verification END***********<br/>
+*********************************   APPROVER USER END *********************************<br/>
+</div>
+</td>
+<td></td>
+<td>860</td>
+<td>testcases.workflows.FundTransferFlowTests@29b5cd00</td></tr>
+<tr>
+<td title='testcases.workflows.FundTransferFlowTests.CITI_Fund_Transfer_Entry()'><b>CITI_Fund_Transfer_Entry</b><br>Test class: testcases.workflows.FundTransferFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Fund_Transfer_Entry:::2, {Testcaseid=TC002, TransferFrom=CIS, TransferTo=CIS, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, FromSafeKeepingAccount=6000002 - RegCIS- Secore SafekeepingAccount1, ToSafeKeepingAccount=10000002 - Reg Fund Safe Account 2, Shares=, Cash=1000, Currency=USD, FROMActATXferAgent=1234567893, TOActATXferAgent=1234567891, SheetName=CISTOCISCASH, ActualShares=97}<br/>
+<a href="#Output-2102999996" onClick='toggleBox("Output-2102999996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2102999996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2102999996">
+Test Data Used ::   {Testcaseid=TC002, TransferFrom=CIS, TransferTo=CIS, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, FromSafeKeepingAccount=6000002 - RegCIS- Secore SafekeepingAccount1, ToSafeKeepingAccount=10000002 - Reg Fund Safe Account 2, Shares=, Cash=1000, Currency=USD, FROMActATXferAgent=1234567893, TOActATXferAgent=1234567891, SheetName=CISTOCISCASH, ActualShares=97}<br/>
+***************************************   Client User START  ***************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: REGFUNDSWCIS1<br/>
+PASS::Order Entry --> Fund Transfer Entry is Clicked<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Transfer From values as "CIS"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Transfer To values as "CIS"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Customer Ref values as "OID2018031007183"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Safe Keeping Account From value as "6000002 - RegCIS- Secore SafekeepingAccount1"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Account at Transfer Agent From value as "1234567893"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Account at Transfer To Agent  value as "1234567891"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Safe Keeping Account To value as "10000002 - Reg Fund Safe Account 2"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Fund ID value as "INE220B14306"<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Cash value as "1000"<br/>
+PASS:: Fund Transfer Entry Screen :: Currency value entered with USD<br/>
+PASS:: Fund Transfer Entry Screen :: Entered the Requested Dealing Date value as "09/03/2018"<br/>
+Fund Transfer Order is created successfully with Customer Reference ID :: OID2018031007183<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+************** Fund Transfer Blotter --> Deliver, East Panel Order Details Verification START **************<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification END*********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Receive<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+************** Fund Transfer Blotter --> Receive, East Panel Order Details Verification START **************<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Counterparty::SK Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+********* Fund Transfer Blotter --> Receive, East Panel Order Details Verification END*********<br/>
+***************************************   Client User END  ***************************************<br/>
+***************************************  Confirm User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: ai10<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Review"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification START *********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Review, Actual Value = Pending Review<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> Deliver, East Panel Order Details Verification END *********<br/>
+PASS::Fund Transfer Blotter --> All tab, Clicked on the Authorize Transfer button<br/>
+PASS::Authorize Fund Transfer Screen, selected the No for the radio button Bill For Fund Transfer<br/>
+PASS::Current Order status is  "Accepted by OA"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+********* Fund Transfer Blotter --> All, Deliver, East Panel Order Details Verification START *********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Accepted by OA, Actual Value = Accepted by OA<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Accepted by OA, Actual Value = Accepted by OA<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, Deliver, East Panel Order Details Verification END *********<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Receive<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+***************************************  Confirm User END  ***************************************<br/>
+***************************************  Approver User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> Fund Transfer Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Receive<br/>
+PASS::Current Order status is  "Accepted by OA / Pending Confirm"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS:: Clicked on the Sub Tab, All<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+PASS::Current Order status is  "Pending Settlement"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Clicked on the Sub Tab, Settlement<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+*********Fund Transfer Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Pending Settlement, Actual Value = Pending Settlement<br/>
+PASS::**Counterparty::Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Counterparty::SK Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+********* Fund Transfer Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Receive<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2018031007183<br/>
+********* Fund Transfer Blotter, Settlement tab, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-CIS-FS1, Actual Value = RegFundSwiftClient-Fax-CIS-FS1<br/>
+PASS::**Customer Information::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Transfer Details::Transfer Type** Expected Value = Receive, Actual Value = Receive<br/>
+PASS::**Transfer Details::Safekeeping Account** Expected Value = 10000002, Actual Value = 10000002<br/>
+PASS::**Transfer Details::Fund ID** Expected Value = INE220B14306, Actual Value = INE220B14306<br/>
+PASS::**Counterparty::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Counterparty::Type** Expected Value = Deliver, Actual Value = Deliver<br/>
+PASS::**Counterparty::SK Account** Expected Value = 6000002, Actual Value = 6000002<br/>
+********* Fund Transfer Blotter, Settlement tab, East Panel Order Details Verification END*********<br/>
+PASS:: Clicked on the Sub Tab, All<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Deliver<br/>
+Number of Certificate of Delivery Events are:  3<br/>
+Number of MT Message Events are:  3<br/>
+PASS:: Number of Certificate of Delivery and MT messages are equal<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  548 02,  Actual Value =  548 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//542,  Actual Value =  :13A::LINK//542**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007183,  Actual Value =  :20C::RELA//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//PACK,  Actual Value =  :25D::IPRC//PACK**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Deliver::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT546 (DF Confirmation) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  546 02,  Actual Value =  546 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007183,  Actual Value =  :20C::RELA//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :98A::ESET//20180309,  Actual Value =  :98A::ESET//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::ESTT//UNIT/97,,  Actual Value =  :36B::ESTT//UNIT/97,**<br/>
+PASS::**Expected Value =  :97A::SAFE//6000002,  Actual Value =  :97A::SAFE//6000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR/SMPG/TRFD,  Actual Value =  :22F::SETR/SMPG/TRFD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95P::SELL//RFSCISTT,  Actual Value =  :95P::SELL//RFSCISTT**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//RegTransferAgent1,  Actual Value =  :95Q::PSET//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::REAG//RegTransferAgent1,  Actual Value =  :95Q::REAG//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT546 (DF Confirmation) Deliver::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT542 (DF) Deliver::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CITIGB20AXXX00000,  Actual Value =  0000 00CITIGB20AXXX00000**<br/>
+PASS::**Expected Value =  0000 00GCNCBEXXAXXX00000,  Actual Value =  0000 00GCNCBEXXAXXX00000**<br/>
+PASS::**Expected Value =  542 02,  Actual Value =  542 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::TRRF//OID2018031007183,  Actual Value =  :20C::TRRF//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180309,  Actual Value =  :98A::SETT//20180309**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::SETT//UNIT/97,,  Actual Value =  :36B::SETT//UNIT/97,**<br/>
+PASS::**Expected Value =  :97A::SAFE//6000002,  Actual Value =  :97A::SAFE//6000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::BUYR//UNITTST,  Actual Value =  :95Q::BUYR//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//NEW YORK,  Actual Value =  :95Q::PSET//NEW YORK**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::REAG//UNITTST,  Actual Value =  :95Q::REAG//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT542 (DF) Deliver::Message Verification END***********<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018031007183,Type::Receive<br/>
+Number of Certificate of Delivery Events are:  3<br/>
+Number of MT Message Events are:  3<br/>
+PASS:: Number of Certificate of Delivery and MT messages are equal<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  548 02,  Actual Value =  548 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//540,  Actual Value =  :13A::LINK//540**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007183,  Actual Value =  :20C::RELA//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//PACK,  Actual Value =  :25D::IPRC//PACK**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+***********Fund Transfer Blotter::All::MT548 (Instruction Status) Receive::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT544 (RF Confirmation) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00RFSCISTTAXXX00000,  Actual Value =  0000 00RFSCISTTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  544 02,  Actual Value =  544 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018031007183,  Actual Value =  :20C::RELA//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :98A::ESET//20180309,  Actual Value =  :98A::ESET//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::ESTT//UNIT/97,,  Actual Value =  :36B::ESTT//UNIT/97,**<br/>
+PASS::**Expected Value =  :97A::SAFE//10000002,  Actual Value =  :97A::SAFE//10000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR/SMPG/TRFD,  Actual Value =  :22F::SETR/SMPG/TRFD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95P::BUYR//RFSCISTT,  Actual Value =  :95P::BUYR//RFSCISTT**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//RegTransferAgent1,  Actual Value =  :95Q::PSET//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::DEAG//RegTransferAgent1,  Actual Value =  :95Q::DEAG//RegTransferAgent1**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT544 (RF Confirmation) Receive::Message Verification END***********<br/>
+***********Fund Transfer Blotter::All::MT540 (RF) Receive::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CITIGB20AXXX00000,  Actual Value =  0000 00CITIGB20AXXX00000**<br/>
+PASS::**Expected Value =  0000 00GCNCBEXXAXXX00000,  Actual Value =  0000 00GCNCBEXXAXXX00000**<br/>
+PASS::**Expected Value =  540 02,  Actual Value =  540 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::TRRF//OID2018031007183,  Actual Value =  :20C::TRRF//OID2018031007183**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180309,  Actual Value =  :98A::SETT//20180309**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180309,  Actual Value =  :98A::TRAD//20180309**<br/>
+PASS::**Expected Value =  :35B:ISIN INE220B14306,  Actual Value =  :35B:ISIN INE220B14306**<br/>
+PASS::**Expected Value =  RegFund-CIS-USD-Dublin,  Actual Value =  RegFund-CIS-USD-Dublin**<br/>
+PASS::**Expected Value =  :16S:TRADDET,  Actual Value =  :16S:TRADDET**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::SETT//UNIT/97,,  Actual Value =  :36B::SETT//UNIT/97,**<br/>
+PASS::**Expected Value =  :97A::SAFE//10000002,  Actual Value =  :97A::SAFE//10000002**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::SELL//UNITTST,  Actual Value =  :95Q::SELL//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//NEW YORK,  Actual Value =  :95Q::PSET//NEW YORK**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::DEAG//UNITTST,  Actual Value =  :95Q::DEAG//UNITTST**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Transfer Blotter::All::MT540 (RF) Receive::Message Verification END***********<br/>
+*********************************   APPROVER USER END *********************************<br/>
+</div>
+</td>
+<td></td>
+<td>854</td>
+<td>testcases.workflows.FundTransferFlowTests@29b5cd00</td></tr>
+</table><p>
+</body>
+</html>

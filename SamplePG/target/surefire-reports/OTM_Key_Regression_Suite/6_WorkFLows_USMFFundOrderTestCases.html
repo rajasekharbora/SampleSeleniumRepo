@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  6:WorkFLows_USMFFundOrderTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>6:WorkFLows_USMFFundOrderTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 14 14:50:05 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>469 seconds (469711 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.USMFWorkFlowTests.CITI_Fund_Order_Entry_USMF_NonTP()'><b>CITI_Fund_Order_Entry_USMF_NonTP</b><br>Test class: testcases.workflows.USMFWorkFlowTests<br>Test method: This test case is for creating Fund Order USMF Work Flow<br>Parameters: CITI_Fund_Order_Entry_USMF_NonTP:::4, {Testcaseid=TC004, Customer=USMFBLG1, FullCustomer=USMFBLG1, FundID=US8792732096, OrderType=Redemption, OrderRegion=USMF, CustomerAccount=9686549549 - 46544546 - USMFBLG1 SKA 2, Shares=, Cash=70000, SheetName=NTPREDMCASHMM, COPriceNAV=15.25, ExecutedShares=700, PIIndicator=Principal}<br/>
+<a href="#Output-247162961" onClick='toggleBox("Output-247162961", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-247162961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247162961">
+INFO::Test Data Used::
+{Testcaseid=TC004, Customer=USMFBLG1, FullCustomer=USMFBLG1, FundID=US8792732096, OrderType=Redemption, OrderRegion=USMF, CustomerAccount=9686549549 - 46544546 - USMFBLG1 SKA 2, Shares=, Cash=70000, SheetName=NTPREDMCASHMM, COPriceNAV=15.25, ExecutedShares=700, PIIndicator=Principal}<br/>
+*************************************  CLIENT USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: usmfblg1<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2017111414504"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Redemption"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "US8792732096"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "9686549549 - 46544546 - USMFBLG1 SKA 2"<br/>
+PASS::Fund Order Entry Screen :: Entered Cash values as "70000"<br/>
+PASS::Fund Order Entry Screen :: Entered the PI Indicator values as "Principal"<br/>
+PASS::Warning Message is displayed and Clicked on Yes button.<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2017111414504<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS::Current Order status is  "Pending Approval"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+********* USMF Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = USMFBLG1, Actual Value = USMFBLG1<br/>
+PASS::**Customer Information::Customer Reference** Expected Value = OID2017111414504, Actual Value = OID2017111414504<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Approval, Actual Value = Pending Approval<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = US8792732096, Actual Value = US8792732096<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 70000, Actual Value = 70000<br/>
+********* USMF Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+*************************************  CLIENT USER END *************************************<br/>
+***************************************   Confirm User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: usmfblg2<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Clicked on Pending Approval Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on the button, Approve Order from button tool bar<br/>
+PASS:: Popup Window, Clicked on the button, "OK"<br/>
+PASS:: Clicked on All Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Order Status is moved to, Holdings Problem<br/>
+******USMF Fund Blotter, East Panel Order Details Verification START******<br/>
+PASS::**Customer Information::Customer** Expected Value = USMFBLG1, Actual Value = USMFBLG1<br/>
+PASS::**Customer Information::Customer Reference** Expected Value = OID2017111414504, Actual Value = OID2017111414504<br/>
+PASS::**Customer Information::Status** Expected Value = Holdings Problem, Actual Value = Holdings Problem<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = US8792732096, Actual Value = US8792732096<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 70000, Actual Value = 70000<br/>
+******USMF Fund Blotter, East Panel Order Details Verification END******<br/>
+***************************************   Confirm User END  ***************************************<br/>
+***************************************   Front Office User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: usmffront<br/>
+PASS::Order Mgt. --> USMF Fund Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on the button, Override Holdings from button tool bar<br/>
+PASS::Current Order status is  "Ready For Placement"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+PASS:: Clicked on Ready For Placement Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on the button, Place With TA - Non TP from button tool bar<br/>
+PASS:: Clicked on All Tab<br/>
+PASS::Current Order status is  "Accepted by TA"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+******USMF Fund Blotter, East Panel Order Details Verification START******<br/>
+PASS::**Customer Information::Customer** Expected Value = USMFBLG1, Actual Value = USMFBLG1<br/>
+PASS::**Customer Information::Customer Reference** Expected Value = OID2017111414504, Actual Value = OID2017111414504<br/>
+PASS::**Customer Information::Status** Expected Value = Accepted by TA, Actual Value = Accepted by TA<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = US8792732096, Actual Value = US8792732096<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 70000, Actual Value = 70000<br/>
+******USMF Fund Blotter, East Panel Order Details Verification END******<br/>
+***************************************   Front Office User END  ***************************************<br/>
+***************************************   Back Office User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: usmfback<br/>
+PASS::Order Mgt. --> USMF Fund Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on the button, Confirm Order from button tool bar<br/>
+PASS::Confirm Order Screen, PriceNAV :: Entered with value, 15.25<br/>
+PASS::Confirm Order Screen, Fees :: Entered with value, 7.63<br/>
+PASS::Confirm Order Screen, ExecutedShares :: Entered with value, 700<br/>
+PASS::Current Order status is  "Accepted by TA / Pending Confirm"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+******USMF Fund Blotter, East Panel Order Details Verification START******<br/>
+PASS::**Customer Information::Customer** Expected Value = USMFBLG1, Actual Value = USMFBLG1<br/>
+PASS::**Customer Information::Customer Reference** Expected Value = OID2017111414504, Actual Value = OID2017111414504<br/>
+PASS::**Customer Information::Status** Expected Value = Accepted by TA / Pending Confirm, Actual Value = Accepted by TA / Pending Confirm<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = US8792732096, Actual Value = US8792732096<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 70000, Actual Value = 70000<br/>
+PASS::**Trade Details::Gross Amount** Expected Value = 10667.37, Actual Value = 10667.37<br/>
+PASS::**Trade Details::Net Amount** Expected Value = 10675, Actual Value = 10675<br/>
+******USMF Fund Blotter, East Panel Order Details Verification END******<br/>
+***************************************   Back Office User END  ***************************************<br/>
+***************************************   Approver User START  ***************************************<br/>
+PASS:: OTM User Login is successful :: jurenr<br/>
+PASS::Order Mgt. --> USMF Fund Order Blotter is Clicked<br/>
+PASS:: Clicked on Pending Confirm Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on the button, Approve Confirm from button tool bar<br/>
+PASS:: Popup Window, Clicked on the button, "Approve Pending Confirm"<br/>
+PASS:: Clicked on All Tab<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2017111414504<br/>
+PASS:: Clicked on Wires Tab<br/>
+PASS:: Successfully applied the filter with, Secondary Ref::Ref111414535<br/>
+PASS:: Clicked on All Tab<br/>
+PASS::Current Order status is  "Pending Settlement"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+PASS:: Clicked on the button, Manual Settlement from button tool bar<br/>
+PASS:: Popup Window, Clicked on the button, "Submit"<br/>
+PASS::Current Order status is  "Settled"  for the Order ID/Customer Ref :: OID2017111414504<br/>
+******USMF Fund Blotter, East Panel Order Details Verification START******<br/>
+PASS::**Customer Information::Customer** Expected Value = USMFBLG1, Actual Value = USMFBLG1<br/>
+PASS::**Customer Information::Customer Reference** Expected Value = OID2017111414504, Actual Value = OID2017111414504<br/>
+PASS::**Customer Information::Status** Expected Value = Settled, Actual Value = Settled<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = US8792732096, Actual Value = US8792732096<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 70000, Actual Value = 70000<br/>
+PASS::**Trade Details::Gross Amount** Expected Value = 10667.37, Actual Value = 10667.37<br/>
+PASS::**Trade Details::Net Amount** Expected Value = 10675, Actual Value = 10675<br/>
+******USMF Fund Blotter, East Panel Order Details Verification END******<br/>
+***********USMF Fund Order Blotter::All::MT509 (Trade Status)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00USMFBL12AXXX00000,  Actual Value =  0000 00USMFBL12AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIUS30AXXX00000,  Actual Value =  0000 00CITIUS30AXXX00000**<br/>
+PASS::**Expected Value =  509 02,  Actual Value =  509 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :98C::PREP//20171114,  Actual Value =  :98C::PREP//20171114**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//502,  Actual Value =  :13A::LINK//502**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2017111414504,  Actual Value =  :20C::RELA//OID2017111414504**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//PACK,  Actual Value =  :25D::IPRC//PACK**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADE,  Actual Value =  :16R:TRADE**<br/>
+PASS::**Expected Value =  :98A::TRAD//20171114,  Actual Value =  :98A::TRAD//20171114**<br/>
+PASS::**Expected Value =  :98A::SETT//20171114,  Actual Value =  :98A::SETT//20171114**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :97A::SAFE//46544546,  Actual Value =  :97A::SAFE//46544546**<br/>
+PASS::**Expected Value =  :19A::ORDR//USD70000,  Actual Value =  :19A::ORDR//USD70000**<br/>
+PASS::**Expected Value =  :35B:ISIN US8792732096,  Actual Value =  :35B:ISIN US8792732096**<br/>
+PASS::**Expected Value =  Julius MM NTP Off Shore,  Actual Value =  Julius MM NTP Off Shore**<br/>
+***********USMF Fund Order Blotter::All::MT509 (Trade Status)::Message Verification END***********<br/>
+***********USMF Fund Order Blotter::All::MT515 (Buy/Sell Confirmation)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00USMFBL12AXXX00000,  Actual Value =  0000 00USMFBL12AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIUS30AXXX00000,  Actual Value =  0000 00CITIUS30AXXX00000**<br/>
+PASS::**Expected Value =  515 02,  Actual Value =  515 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2017111414504,  Actual Value =  :20C::RELA//OID2017111414504**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:CONFDET,  Actual Value =  :16R:CONFDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20171114,  Actual Value =  :98A::TRAD//20171114**<br/>
+PASS::**Expected Value =  :98A::SETT//20171114,  Actual Value =  :98A::SETT//20171114**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :16R:CONFPRTY,  Actual Value =  :16R:CONFPRTY**<br/>
+PASS::**Expected Value =  :95P::SELL//USMFBL12,  Actual Value =  :95P::SELL//USMFBL12**<br/>
+PASS::**Expected Value =  :97A::SAFE//46544546,  Actual Value =  :97A::SAFE//46544546**<br/>
+PASS::**Expected Value =  :16S:CONFPRTY,  Actual Value =  :16S:CONFPRTY**<br/>
+PASS::**Expected Value =  :36B::CONF//UNIT/700,  Actual Value =  :36B::CONF//UNIT/700**<br/>
+PASS::**Expected Value =  :35B:ISIN US8792732096,  Actual Value =  :35B:ISIN US8792732096**<br/>
+PASS::**Expected Value =  Julius MM NTP Off Shore,  Actual Value =  Julius MM NTP Off Shore**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::CHAR//USD7,63,  Actual Value =  :19A::CHAR//USD7,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD10675,  Actual Value =  :19A::DEAL//USD10675**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD10667,37,  Actual Value =  :19A::SETT//USD10667,37**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********USMF Fund Order Blotter::All::MT515 (Buy/Sell Confirmation)::Message Verification END***********<br/>
+***********USMF Fund Order Blotter::All::MT543 (DVP)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00GCNNYASTAXXX00000,  Actual Value =  0000 00GCNNYASTAXXX00000**<br/>
+PASS::**Expected Value =  0000 00GCNCBEXXXMUT00000,  Actual Value =  0000 00GCNCBEXXXMUT00000**<br/>
+PASS::**Expected Value =  543 02,  Actual Value =  543 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::TRRF//OID2017111414504,  Actual Value =  :20C::TRRF//OID2017111414504**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADDET,  Actual Value =  :16R:TRADDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20171114,  Actual Value =  :98A::TRAD//20171114**<br/>
+PASS::**Expected Value =  :98A::SETT//20171114,  Actual Value =  :98A::SETT//20171114**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :35B:ISIN US8792732096,  Actual Value =  :35B:ISIN US8792732096**<br/>
+PASS::**Expected Value =  Julius MM NTP Off Shore,  Actual Value =  Julius MM NTP Off Shore**<br/>
+PASS::**Expected Value =  :16R:FIAC,  Actual Value =  :16R:FIAC**<br/>
+PASS::**Expected Value =  :36B::SETT//UNIT/700,  Actual Value =  :36B::SETT//UNIT/700**<br/>
+PASS::**Expected Value =  :97A::SAFE//46544546,  Actual Value =  :97A::SAFE//46544546**<br/>
+PASS::**Expected Value =  :16S:FIAC,  Actual Value =  :16S:FIAC**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95R::REAG/DTCYID/3133,  Actual Value =  :95R::REAG/DTCYID/3133**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:SETPRTY,  Actual Value =  :16R:SETPRTY**<br/>
+PASS::**Expected Value =  :95Q::PSET//NEWYORK,  Actual Value =  :95Q::PSET//NEWYORK**<br/>
+PASS::**Expected Value =  :16S:SETPRTY,  Actual Value =  :16S:SETPRTY**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::CHAR//USD7,63,  Actual Value =  :19A::CHAR//USD7,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD10675,  Actual Value =  :19A::DEAL//USD10675**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD10667,37,  Actual Value =  :19A::SETT//USD10667,37**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********USMF Fund Order Blotter::All::MT543 (DVP)::Message Verification END***********<br/>
+***************************************   Approver User END  ***************************************<br/>
+</div>
+</td>
+<td></td>
+<td>459</td>
+<td>testcases.workflows.USMFWorkFlowTests@76f2b07d</td></tr>
+</table><p>
+</body>
+</html>

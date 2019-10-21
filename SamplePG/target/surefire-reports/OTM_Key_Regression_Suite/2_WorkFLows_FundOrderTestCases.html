@@ -1,0 +1,802 @@
+<html>
+<head>
+<title>TestNG:  2:WorkFLows_FundOrderTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>2:WorkFLows_FundOrderTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 29 19:01:01 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>2112 seconds (2112135 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Vestima_Fund_Order()'><b>CITI_Vestima_Fund_Order</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Vestima_Fund_Order:::1, {Testcaseid=TC001, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Subscription, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=, Cash=500, SheetName=SUBSCASH, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+<a href="#Output-1634723627" onClick='toggleBox("Output-1634723627", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1634723627" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1634723627">
+INFO::Test Data Used::
+{Testcaseid=TC001, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Subscription, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=, Cash=500, SheetName=SUBSCASH, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+*************************************  CLIENT USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: kavitha<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "RegFundSwiftClientVE"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032919020"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Subscription"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "LI0183908107"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "5000002 - 5000001 - RegFund_VESTIMA_SA1"<br/>
+PASS::Fund Order Entry Screen :: Entered Cash values as "500"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032919020<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919020<br/>
+********* Client User, Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Accept, Actual Value = Pending Accept<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+*********Client User, Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Swift Message is loaded successfully::0000 00CITIGB20AFND00000
+0526 12CEDELUL0ALIB20863
+509 02
+:16R:GENL
+:20C::SEME//VS656677-2
+:23G:INST
+:98A::PREP//20111114
+:16R:LINK
+:20C::RELA//VS656677
+:16S:LINK
+:16R:STAT
+:25D::IPRC/CEDE/PASS
+:16R:REAS
+:24B::NAFI/CEDE/INSE
+:70D::REAS///REAS/INSERTED
+:16S:REAS
+:16S:STAT
+:16S:GENL
+-|
+<br/>
+*************************************  CLIENT USER END *************************************<br/>
+*************************************  CONFIRM USER START *************************************<br/>
+PASS:: OTM User Login is successful :: gprasad<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919020<br/>
+PASS:: Clicked on the tool bar button, Confirm Order<br/>
+PASS::Confirm Order Screen, PriceNAV :: Entered with value, 15.25<br/>
+PASS::Confirm Order Screen, Fees :: Entered with value, 0.63<br/>
+PASS::Confirm Order Screen, ExecutedShares :: Entered with value, 100<br/>
+PASS::Confirm Order Screen, GrossValue :: Entered with value, 1,525.63 USD<br/>
+PASS::Confirm Order Screen, Verify Registration checkbox is selected<br/>
+PASS::Confirm Order Screen, Clicked on Submit Button<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Rejected by OA / Pending Confirm, Actual Value = Rejected by OA / Pending Confirm<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+*************************************  CONFIRM USER END *************************************<br/>
+*************************************  APPROVER USER START *************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919020<br/>
+PASS:: Clicked on the tool bar button, Approve Confirm<br/>
+PASS:: Popup Window, Clicked on the button, "Accept Pending Confirm"<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919020<br/>
+PASS::Current Order status is  "Confirmed by TA"  for the Order ID/Customer Ref :: OID2018032919020<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Confirmed by TA, Actual Value = Confirmed by TA<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  509 02,  Actual Value =  509 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//502,  Actual Value =  :13A::LINK//502**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919020,  Actual Value =  :20C::RELA//OID2018032919020**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//REJT,  Actual Value =  :25D::IPRC//REJT**<br/>
+PASS::**Expected Value =  :16R:REAS,  Actual Value =  :16R:REAS**<br/>
+PASS::**Expected Value =  :24B::REJT//NARR,  Actual Value =  :24B::REJT//NARR**<br/>
+PASS::**Expected Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM,  Actual Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM**<br/>
+PASS::**Expected Value =  :16S:REAS,  Actual Value =  :16S:REAS**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :19A::ORDR//USD500,,  Actual Value =  :19A::ORDR//USD500,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:TRADE,  Actual Value =  :16S:TRADE**<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification END***********<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CEDELUL0XLIB00000,  Actual Value =  0000 00CEDELUL0XLIB00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  502 02,  Actual Value =  502 02**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:ORDRDET,  Actual Value =  :16R:ORDRDET**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :22F::TILI//GTCA,  Actual Value =  :22F::TILI//GTCA**<br/>
+PASS::**Expected Value =  :22F::TOOR//MAKT,  Actual Value =  :22F::TOOR//MAKT**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :98A::EXPI//29991231,  Actual Value =  :98A::EXPI//29991231**<br/>
+PASS::**Expected Value =  :16R:TRADPRTY,  Actual Value =  :16R:TRADPRTY**<br/>
+PASS::**Expected Value =  :95R::BUYR/CEDE/5000001,  Actual Value =  :95R::BUYR/CEDE/5000001**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:TRADPRTY,  Actual Value =  :16S:TRADPRTY**<br/>
+PASS::**Expected Value =  :19A::ORDR//USD500,,  Actual Value =  :19A::ORDR//USD500,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:ORDRDET,  Actual Value =  :16S:ORDRDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification END***********<br/>
+PASS:: Clicked on the Sub Tab, All Trades and Confirms<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919020<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  515 02,  Actual Value =  515 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919020,  Actual Value =  :20C::RELA//OID2018032919020**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:CONFDET,  Actual Value =  :16R:CONFDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180329,  Actual Value =  :98A::TRAD//20180329**<br/>
+PASS::**Expected Value =  :98A::SETT//20180330,  Actual Value =  :98A::SETT//20180330**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :16R:CONFPRTY,  Actual Value =  :16R:CONFPRTY**<br/>
+PASS::**Expected Value =  :95P::BUYR//REVESW11,  Actual Value =  :95P::BUYR//REVESW11**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:CONFPRTY,  Actual Value =  :16S:CONFPRTY**<br/>
+PASS::**Expected Value =  :36B::CONF//UNIT/100,,  Actual Value =  :36B::CONF//UNIT/100,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:CONFDET,  Actual Value =  :16S:CONFDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD1525,,  Actual Value =  :19A::DEAL//USD1525,**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD1525,63,  Actual Value =  :19A::SETT//USD1525,63**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+FAIL::**********Expected Value =  :19A::OTHR//USD7,63,,  Actual Value = :19A::OTHR//USD0,63**********<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification END***********<br/>
+*************************************  APPROVER USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>596</td>
+<td>testcases.workflows.FundOrderFlowTests@4232c52b</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Vestima_Fund_Order()'><b>CITI_Vestima_Fund_Order</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Vestima_Fund_Order:::2, {Testcaseid=TC002, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Subscription, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=1000, Cash=, SheetName=SUBSSHARES, COPriceNAV=15.25, ExecutedShares=, ConfirmVerifyRegistration=Yes}<br/>
+<a href="#Output-690822257" onClick='toggleBox("Output-690822257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-690822257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-690822257">
+INFO::Test Data Used::
+{Testcaseid=TC002, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Subscription, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=1000, Cash=, SheetName=SUBSSHARES, COPriceNAV=15.25, ExecutedShares=, ConfirmVerifyRegistration=Yes}<br/>
+*************************************  CLIENT USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: kavitha<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "RegFundSwiftClientVE"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032919114"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Subscription"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "LI0183908107"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "5000002 - 5000001 - RegFund_VESTIMA_SA1"<br/>
+PASS::Fund Order Entry Screen :: Entered Shares values as "1000"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032919114<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919114<br/>
+********* Client User, Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Accept, Actual Value = Pending Accept<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+*********Client User, Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Swift Message is loaded successfully::0000 00CITIGB20AFND00000
+0526 12CEDELUL0ALIB20863
+509 02
+:16R:GENL
+:20C::SEME//VS656682-2
+:23G:INST
+:98A::PREP//20111114
+:16R:LINK
+:20C::RELA//VS656682
+:16S:LINK
+:16R:STAT
+:25D::IPRC/CEDE/PASS
+:16R:REAS
+:24B::NAFI/CEDE/INSE
+:70D::REAS///REAS/INSERTED
+:16S:REAS
+:16S:STAT
+:16S:GENL
+-|
+<br/>
+*************************************  CLIENT USER END *************************************<br/>
+*************************************  CONFIRM USER START *************************************<br/>
+PASS:: OTM User Login is successful :: gprasad<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919114<br/>
+PASS:: Clicked on the tool bar button, Confirm Order<br/>
+PASS::Confirm Order Screen, PriceNAV :: Entered with value, 15.25<br/>
+PASS::Confirm Order Screen, Fees :: Entered with value, 7.63<br/>
+PASS::Confirm Order Screen, Shares :: Entered with value, 1000<br/>
+PASS::Confirm Order Screen, GrossValue :: Entered with value, 15,257.63 USD<br/>
+PASS::Confirm Order Screen, Verify Registration checkbox is selected<br/>
+PASS::Confirm Order Screen, Clicked on Submit Button<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Rejected by OA / Pending Confirm, Actual Value = Rejected by OA / Pending Confirm<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+*************************************  CONFIRM USER END *************************************<br/>
+*************************************  APPROVER USER START *************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919114<br/>
+PASS:: Clicked on the tool bar button, Approve Confirm<br/>
+PASS:: Popup Window, Clicked on the button, "Accept Pending Confirm"<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919114<br/>
+PASS::Current Order status is  "Confirmed by TA"  for the Order ID/Customer Ref :: OID2018032919114<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Confirmed by TA, Actual Value = Confirmed by TA<br/>
+PASS::**Trade Details::Type** Expected Value = Subscription, Actual Value = Subscription<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  509 02,  Actual Value =  509 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//502,  Actual Value =  :13A::LINK//502**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919114,  Actual Value =  :20C::RELA//OID2018032919114**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//REJT,  Actual Value =  :25D::IPRC//REJT**<br/>
+PASS::**Expected Value =  :16R:REAS,  Actual Value =  :16R:REAS**<br/>
+PASS::**Expected Value =  :24B::REJT//NARR,  Actual Value =  :24B::REJT//NARR**<br/>
+PASS::**Expected Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM,  Actual Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM**<br/>
+PASS::**Expected Value =  :16S:REAS,  Actual Value =  :16S:REAS**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADE,  Actual Value =  :16R:TRADE**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :36B::ORDR//UNIT/1000,,  Actual Value =  :36B::ORDR//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:TRADE,  Actual Value =  :16S:TRADE**<br/>
+FAIL::**********Expected Value =  :98C::PREP//20171116170852,,  Actual Value = -|**********<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CEDELUL0XLIB00000,  Actual Value =  0000 00CEDELUL0XLIB00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  502 02,  Actual Value =  502 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:ORDRDET,  Actual Value =  :16R:ORDRDET**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :22F::TILI//GTCA,  Actual Value =  :22F::TILI//GTCA**<br/>
+PASS::**Expected Value =  :22F::TOOR//MAKT,  Actual Value =  :22F::TOOR//MAKT**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :98A::EXPI//29991231,  Actual Value =  :98A::EXPI//29991231**<br/>
+PASS::**Expected Value =  :16R:TRADPRTY,  Actual Value =  :16R:TRADPRTY**<br/>
+PASS::**Expected Value =  :95R::BUYR/CEDE/5000001,  Actual Value =  :95R::BUYR/CEDE/5000001**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:TRADPRTY,  Actual Value =  :16S:TRADPRTY**<br/>
+PASS::**Expected Value =  :36B::ORDR//UNIT/1000,,  Actual Value =  :36B::ORDR//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:ORDRDET,  Actual Value =  :16S:ORDRDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification END***********<br/>
+PASS:: Clicked on the Sub Tab, All Trades and Confirms<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919114<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  515 02,  Actual Value =  515 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919114,  Actual Value =  :20C::RELA//OID2018032919114**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:CONFDET,  Actual Value =  :16R:CONFDET**<br/>
+PASS::**Expected Value =  :98A::TRAD//20180329,  Actual Value =  :98A::TRAD//20180329**<br/>
+PASS::**Expected Value =  :98A::SETT//20180330,  Actual Value =  :98A::SETT//20180330**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :22H::BUSE//SUBS,  Actual Value =  :22H::BUSE//SUBS**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :16R:CONFPRTY,  Actual Value =  :16R:CONFPRTY**<br/>
+PASS::**Expected Value =  :95P::BUYR//REVESW11,  Actual Value =  :95P::BUYR//REVESW11**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:CONFPRTY,  Actual Value =  :16S:CONFPRTY**<br/>
+PASS::**Expected Value =  :36B::CONF//UNIT/1000,,  Actual Value =  :36B::CONF//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:CONFDET,  Actual Value =  :16S:CONFDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD15250,,  Actual Value =  :19A::DEAL//USD15250,**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD15257,63,  Actual Value =  :19A::SETT//USD15257,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::OTHR//USD7,63,  Actual Value =  :19A::OTHR//USD7,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification END***********<br/>
+*************************************  APPROVER USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>467</td>
+<td>testcases.workflows.FundOrderFlowTests@4232c52b</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Vestima_Fund_Order()'><b>CITI_Vestima_Fund_Order</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Vestima_Fund_Order:::3, {Testcaseid=TC003, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Redemption, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=, Cash=500, SheetName=REDMCASH, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+<a href="#Output-455668354" onClick='toggleBox("Output-455668354", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455668354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455668354">
+INFO::Test Data Used::
+{Testcaseid=TC003, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Redemption, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=, Cash=500, SheetName=REDMCASH, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}<br/>
+*************************************  CLIENT USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: kavitha<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "RegFundSwiftClientVE"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032919193"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Redemption"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "LI0183908107"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "5000002 - 5000001 - RegFund_VESTIMA_SA1"<br/>
+PASS::Fund Order Entry Screen :: Entered Cash values as "500"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032919193<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919193<br/>
+********* Client User, Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Accept, Actual Value = Pending Accept<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+*********Client User, Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Swift Message is loaded successfully::0000 00CITIGB20AFND00000
+0526 12CEDELUL0ALIB20863
+509 02
+:16R:GENL
+:20C::SEME//VS656686-2
+:23G:INST
+:98A::PREP//20111114
+:16R:LINK
+:20C::RELA//VS656686
+:16S:LINK
+:16R:STAT
+:25D::IPRC/CEDE/PASS
+:16R:REAS
+:24B::NAFI/CEDE/INSE
+:70D::REAS///REAS/INSERTED
+:16S:REAS
+:16S:STAT
+:16S:GENL
+-|
+<br/>
+*************************************  CLIENT USER END *************************************<br/>
+*************************************  CONFIRM USER START *************************************<br/>
+PASS:: OTM User Login is successful :: gprasad<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919193<br/>
+PASS:: Clicked on the tool bar button, Confirm Order<br/>
+PASS::Confirm Order Screen, PriceNAV :: Entered with value, 15.25<br/>
+PASS::Confirm Order Screen, Fees :: Entered with value, 7.63<br/>
+PASS::Confirm Order Screen, ExecutedShares :: Entered with value, 100<br/>
+PASS::Confirm Order Screen, GrossValue :: Entered with value, 1,517.37 USD<br/>
+PASS::Confirm Order Screen, Verify Registration checkbox is selected<br/>
+PASS::Confirm Order Screen, Clicked on Submit Button<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Rejected by OA / Pending Confirm, Actual Value = Rejected by OA / Pending Confirm<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+*************************************  CONFIRM USER END *************************************<br/>
+*************************************  APPROVER USER START *************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919193<br/>
+PASS:: Clicked on the tool bar button, Approve Confirm<br/>
+PASS:: Popup Window, Clicked on the button, "Accept Pending Confirm"<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919193<br/>
+PASS::Current Order status is  "Confirmed by TA"  for the Order ID/Customer Ref :: OID2018032919193<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Confirmed by TA, Actual Value = Confirmed by TA<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Cash** Expected Value = 500, Actual Value = 500<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  509 02,  Actual Value =  509 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//502,  Actual Value =  :13A::LINK//502**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919193,  Actual Value =  :20C::RELA//OID2018032919193**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//REJT,  Actual Value =  :25D::IPRC//REJT**<br/>
+PASS::**Expected Value =  :16R:REAS,  Actual Value =  :16R:REAS**<br/>
+PASS::**Expected Value =  :24B::REJT//NARR,  Actual Value =  :24B::REJT//NARR**<br/>
+PASS::**Expected Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM,  Actual Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM**<br/>
+PASS::**Expected Value =  :16S:REAS,  Actual Value =  :16S:REAS**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADE,  Actual Value =  :16R:TRADE**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :19A::ORDR//USD500,,  Actual Value =  :19A::ORDR//USD500,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:TRADE,  Actual Value =  :16S:TRADE**<br/>
+FAIL::**********Expected Value =  :98C::PREP//20171116171446,,  Actual Value = -|**********<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification START***********<br/>
+FAIL::**********Expected Value =  0000 00ZYAILUL0AXXX00000,,  Actual Value = 0000 00CEDELUL0XLIB00000**********<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  502 02,  Actual Value =  502 02**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:ORDRDET,  Actual Value =  :16R:ORDRDET**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :22F::TILI//GTCA,  Actual Value =  :22F::TILI//GTCA**<br/>
+PASS::**Expected Value =  :22F::TOOR//MAKT,  Actual Value =  :22F::TOOR//MAKT**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :98A::EXPI//29991231,  Actual Value =  :98A::EXPI//29991231**<br/>
+PASS::**Expected Value =  :16R:TRADPRTY,  Actual Value =  :16R:TRADPRTY**<br/>
+PASS::**Expected Value =  :95R::SELL/CEDE/5000001,  Actual Value =  :95R::SELL/CEDE/5000001**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:TRADPRTY,  Actual Value =  :16S:TRADPRTY**<br/>
+PASS::**Expected Value =  :19A::ORDR//USD500,,  Actual Value =  :19A::ORDR//USD500,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:ORDRDET,  Actual Value =  :16S:ORDRDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification END***********<br/>
+PASS:: Clicked on the Sub Tab, All Trades and Confirms<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919193<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  515 02,  Actual Value =  515 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919193,  Actual Value =  :20C::RELA//OID2018032919193**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:CONFDET,  Actual Value =  :16R:CONFDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180330,  Actual Value =  :98A::SETT//20180330**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :16R:CONFPRTY,  Actual Value =  :16R:CONFPRTY**<br/>
+PASS::**Expected Value =  :95P::SELL//REVESW11,  Actual Value =  :95P::SELL//REVESW11**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:CONFPRTY,  Actual Value =  :16S:CONFPRTY**<br/>
+PASS::**Expected Value =  :36B::CONF//UNIT/100,,  Actual Value =  :36B::CONF//UNIT/100,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:CONFDET,  Actual Value =  :16S:CONFDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD1525,,  Actual Value =  :19A::DEAL//USD1525,**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD1517,37,  Actual Value =  :19A::SETT//USD1517,37**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::OTHR//USD7,63,  Actual Value =  :19A::OTHR//USD7,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification END***********<br/>
+*************************************  APPROVER USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>513</td>
+<td>testcases.workflows.FundOrderFlowTests@4232c52b</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Vestima_Fund_Order()'><b>CITI_Vestima_Fund_Order</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Vestima_Fund_Order:::4, {Testcaseid=TC004, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Redemption, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=1000, Cash=, SheetName=REDMSHARES, COPriceNAV=15.25, ExecutedShares=, ConfirmVerifyRegistration=Yes}<br/>
+<a href="#Output-439925336" onClick='toggleBox("Output-439925336", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-439925336" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-439925336">
+INFO::Test Data Used::
+{Testcaseid=TC004, CleintUser=Yes, Customer=RegFundSwiftClientVE, FullCustomer=RegFundSwiftClient-Fax-VESTIMA, FundID=LI0183908107, OrderType=Redemption, OrderRegion=Vestima, CustomerAccount=5000002 - 5000001 - RegFund_VESTIMA_SA1, Shares=1000, Cash=, SheetName=REDMSHARES, COPriceNAV=15.25, ExecutedShares=, ConfirmVerifyRegistration=Yes}<br/>
+*************************************  CLIENT USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: kavitha<br/>
+PASS::Order Entry --> Fund Order Entry is Clicked<br/>
+PASS::Fund Order Entry Screen :: Entered the customer values as "RegFundSwiftClientVE"<br/>
+PASS::Fund Order Entry Screen :: Entered the Customer Ref values as "OID2018032919280"<br/>
+PASS::Fund Order Entry Screen :: selected Order type values as "Redemption"<br/>
+PASS::Fund Order Entry Screen :: Entered Fund ID values as "LI0183908107"<br/>
+PASS::Fund Order Entry Screen :: Entered Customer account values as "5000002 - 5000001 - RegFund_VESTIMA_SA1"<br/>
+PASS::Fund Order Entry Screen :: Entered Shares values as "1000"<br/>
+PASS::Order is created successfully with Customer reference ID :: OID2018032919280<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919280<br/>
+********* Client User, Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Pending Accept, Actual Value = Pending Accept<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+*********Client User, Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+PASS:: Swift Message is loaded successfully::0000 00CITIGB20AFND00000
+0526 12CEDELUL0ALIB20863
+509 02
+:16R:GENL
+:20C::SEME//VS656690-2
+:23G:INST
+:98A::PREP//20111114
+:16R:LINK
+:20C::RELA//VS656690
+:16S:LINK
+:16R:STAT
+:25D::IPRC/CEDE/PASS
+:16R:REAS
+:24B::NAFI/CEDE/INSE
+:70D::REAS///REAS/INSERTED
+:16S:REAS
+:16S:STAT
+:16S:GENL
+-|
+<br/>
+*************************************  CLIENT USER END *************************************<br/>
+*************************************  CONFIRM USER START *************************************<br/>
+PASS:: OTM User Login is successful :: gprasad<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919280<br/>
+PASS:: Clicked on the tool bar button, Confirm Order<br/>
+PASS::Confirm Order Screen, PriceNAV :: Entered with value, 15.25<br/>
+PASS::Confirm Order Screen, Fees :: Entered with value, 7.63<br/>
+PASS::Confirm Order Screen, Shares :: Entered with value, 1000<br/>
+PASS::Confirm Order Screen, GrossValue :: Entered with value, 15,242.37 USD<br/>
+PASS::Confirm Order Screen, Verify Registration checkbox is selected<br/>
+PASS::Confirm Order Screen, Clicked on Submit Button<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Rejected by OA / Pending Confirm, Actual Value = Rejected by OA / Pending Confirm<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+*************************************  CONFIRM USER END *************************************<br/>
+*************************************  APPROVER USER START *************************************<br/>
+PASS:: OTM User Login is successful :: ai11<br/>
+PASS::Order Mgt. --> CIS Open Fund Blotter is Clicked<br/>
+PASS:: Clicked on the Sub Tab, Pending Confirm<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919280<br/>
+PASS:: Clicked on the tool bar button, Approve Confirm<br/>
+PASS:: Popup Window, Clicked on the button, "Accept Pending Confirm"<br/>
+PASS::Order Mgt. --> Fund Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919280<br/>
+PASS::Current Order status is  "Confirmed by TA"  for the Order ID/Customer Ref :: OID2018032919280<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Customer Information::Customer** Expected Value = RegFundSwiftClient-Fax-VESTIMA, Actual Value = RegFundSwiftClient-Fax-VESTIMA<br/>
+PASS::**Customer Information::Status** Expected Value = Confirmed by TA, Actual Value = Confirmed by TA<br/>
+PASS::**Trade Details::Type** Expected Value = Redemption, Actual Value = Redemption<br/>
+PASS::**Trade Details::Fund ID** Expected Value = LI0183908107, Actual Value = LI0183908107<br/>
+PASS::**Trade Details::Safekeeping Account** Expected Value = 5000002, Actual Value = 5000002<br/>
+PASS::**Trade Details::Account/Registration** Expected Value = 5000001, Actual Value = 5000001<br/>
+PASS::**Trade Details::Order Shares** Expected Value = 1000, Actual Value = 1000<br/>
+********* CIS OPen Fund Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  509 02,  Actual Value =  509 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:INST,  Actual Value =  :23G:INST**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :13A::LINK//502,  Actual Value =  :13A::LINK//502**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919280,  Actual Value =  :20C::RELA//OID2018032919280**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16R:STAT,  Actual Value =  :16R:STAT**<br/>
+PASS::**Expected Value =  :25D::IPRC//REJT,  Actual Value =  :25D::IPRC//REJT**<br/>
+PASS::**Expected Value =  :16R:REAS,  Actual Value =  :16R:REAS**<br/>
+PASS::**Expected Value =  :24B::REJT//NARR,  Actual Value =  :24B::REJT//NARR**<br/>
+PASS::**Expected Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM,  Actual Value =  :70D::REAS//MESSAGE HAS BEEN REJECTED BY VESTIM**<br/>
+PASS::**Expected Value =  :16S:REAS,  Actual Value =  :16S:REAS**<br/>
+PASS::**Expected Value =  :16S:STAT,  Actual Value =  :16S:STAT**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:TRADE,  Actual Value =  :16R:TRADE**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :36B::ORDR//UNIT/1000,,  Actual Value =  :36B::ORDR//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:TRADE,  Actual Value =  :16S:TRADE**<br/>
+***********Fund Blotter::All::MT509 (Trade Status)::Message Verification END***********<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00CEDELUL0XLIB00000,  Actual Value =  0000 00CEDELUL0XLIB00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  502 02,  Actual Value =  502 02**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:ORDRDET,  Actual Value =  :16R:ORDRDET**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :22F::TILI//GTCA,  Actual Value =  :22F::TILI//GTCA**<br/>
+PASS::**Expected Value =  :22F::TOOR//MAKT,  Actual Value =  :22F::TOOR//MAKT**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :98A::EXPI//29991231,  Actual Value =  :98A::EXPI//29991231**<br/>
+PASS::**Expected Value =  :16R:TRADPRTY,  Actual Value =  :16R:TRADPRTY**<br/>
+PASS::**Expected Value =  :95R::SELL/CEDE/5000001,  Actual Value =  :95R::SELL/CEDE/5000001**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:TRADPRTY,  Actual Value =  :16S:TRADPRTY**<br/>
+PASS::**Expected Value =  :36B::ORDR//UNIT/1000,,  Actual Value =  :36B::ORDR//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:ORDRDET,  Actual Value =  :16S:ORDRDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+***********Fund Blotter::All::MT502 (Buy/Sell Order)::Message Verification END***********<br/>
+PASS:: Clicked on the Sub Tab, All Trades and Confirms<br/>
+PASS:: Successfully applied the filter with, Customer Ref::OID2018032919280<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification START***********<br/>
+PASS::**Expected Value =  0000 00REVESW11AXXX00000,  Actual Value =  0000 00REVESW11AXXX00000**<br/>
+PASS::**Expected Value =  0000 00CITIGB20XFND00000,  Actual Value =  0000 00CITIGB20XFND00000**<br/>
+PASS::**Expected Value =  515 02,  Actual Value =  515 02**<br/>
+PASS::**Expected Value =  :16R:GENL,  Actual Value =  :16R:GENL**<br/>
+PASS::**Expected Value =  :23G:NEWM,  Actual Value =  :23G:NEWM**<br/>
+PASS::**Expected Value =  :22F::TRTR//TRAD,  Actual Value =  :22F::TRTR//TRAD**<br/>
+PASS::**Expected Value =  :16R:LINK,  Actual Value =  :16R:LINK**<br/>
+PASS::**Expected Value =  :20C::RELA//OID2018032919280,  Actual Value =  :20C::RELA//OID2018032919280**<br/>
+PASS::**Expected Value =  :16S:LINK,  Actual Value =  :16S:LINK**<br/>
+PASS::**Expected Value =  :16S:GENL,  Actual Value =  :16S:GENL**<br/>
+PASS::**Expected Value =  :16R:CONFDET,  Actual Value =  :16R:CONFDET**<br/>
+PASS::**Expected Value =  :98A::SETT//20180330,  Actual Value =  :98A::SETT//20180330**<br/>
+PASS::**Expected Value =  :90B::DEAL//ACTU/USD15,25,  Actual Value =  :90B::DEAL//ACTU/USD15,25**<br/>
+PASS::**Expected Value =  :22H::BUSE//REDM,  Actual Value =  :22H::BUSE//REDM**<br/>
+PASS::**Expected Value =  :22H::PAYM//APMT,  Actual Value =  :22H::PAYM//APMT**<br/>
+PASS::**Expected Value =  :16R:CONFPRTY,  Actual Value =  :16R:CONFPRTY**<br/>
+PASS::**Expected Value =  :95P::SELL//REVESW11,  Actual Value =  :95P::SELL//REVESW11**<br/>
+PASS::**Expected Value =  :97A::SAFE//5000002,  Actual Value =  :97A::SAFE//5000002**<br/>
+PASS::**Expected Value =  :16S:CONFPRTY,  Actual Value =  :16S:CONFPRTY**<br/>
+PASS::**Expected Value =  :36B::CONF//UNIT/1000,,  Actual Value =  :36B::CONF//UNIT/1000,**<br/>
+PASS::**Expected Value =  :35B:ISIN LI0183908107,  Actual Value =  :35B:ISIN LI0183908107**<br/>
+PASS::**Expected Value =  :16S:CONFDET,  Actual Value =  :16S:CONFDET**<br/>
+PASS::**Expected Value =  :16R:SETDET,  Actual Value =  :16R:SETDET**<br/>
+PASS::**Expected Value =  :22F::SETR//TRAD,  Actual Value =  :22F::SETR//TRAD**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::DEAL//USD15250,,  Actual Value =  :19A::DEAL//USD15250,**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::SETT//USD15242,37,  Actual Value =  :19A::SETT//USD15242,37**<br/>
+PASS::**Expected Value =  :16R:AMT,  Actual Value =  :16R:AMT**<br/>
+PASS::**Expected Value =  :19A::OTHR//USD7,63,  Actual Value =  :19A::OTHR//USD7,63**<br/>
+PASS::**Expected Value =  :16S:AMT,  Actual Value =  :16S:AMT**<br/>
+PASS::**Expected Value =  :16S:SETDET,  Actual Value =  :16S:SETDET**<br/>
+***********Fund Blotter::All Trades and Confirms::MT515 (Buy/Sell Confirmation)::Message Verification END***********<br/>
+*************************************  APPROVER USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>530</td>
+<td>testcases.workflows.FundOrderFlowTests@4232c52b</td></tr>
+</table><p>
+</body>
+</html>

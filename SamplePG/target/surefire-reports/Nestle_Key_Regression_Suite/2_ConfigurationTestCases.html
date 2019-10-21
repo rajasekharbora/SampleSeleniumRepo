@@ -1,0 +1,309 @@
+<html>
+<head>
+<title>TestNG:  2:ConfigurationTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>2:ConfigurationTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 25 12:29:03 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>397 seconds (397186 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.ConfigurationTest.CommunityAdmin_PlantConfig()'><b>CommunityAdmin_PlantConfig</b><br>Test class: testcases.workflows.ConfigurationTest<br>Test method: For creating Plant Code in the application<br>Parameters: CommunityAdmin_PlantConfig:::1:::Chrome, {Testcaseid=TC005, CType=PLANT_CODE, codeValue=300, PCodeDesc=English, PcodelAng=Nederlands, PCodeDisplay=Eathes, PlantDesc=English1, PlantlAng=Italian, PCDisplay=Eng, BrowserName=Chrome}<br/>
+<a href="#Output-628064884" onClick='toggleBox("Output-628064884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-628064884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-628064884">
+Browser Executed Type::Chrome<br/>
+PASS:: Nestle User Login is Passed :: NestleSwitzerland@ot.com<br/>
+PASS:: Clicked on Menu link, Configuration;Plant Code<br/>
+*****   TC_34: Validate Plant code add configuration screen Starts   *****<br/>
+PASS:: 'Plant Code List' Page is displayed.<br/>
+PASS:: Plant Code List Page : Clicked on Add link<br/>
+******           Plant Code Creation Start           *****<br/>
+PASS:: 'Create Plant Code' Page is displayed.<br/>
+PASS:: Create PlantCode Page : Selected Code type with value PLANT_CODE<br/>
+PASS:: Create PlantCode Page : Selected Plantcode value with value: 300<br/>
+PASS:: Create PlantCode Page: Selected Description with value: English<br/>
+PASS:: Create PalntCode Page: Selected Language dropdown with value: Nederlands<br/>
+PASS:: Create PlantCode Page: Selected Description with value: Eathes<br/>
+PASS:: Create PalntCode Page : Clicked on Save button<br/>
+PASS:: Create PlantCode : Clicked OK of the Popup Message having the text:Plant Code saved successfully<br/>
+******           Plant Code Creation End           *****<br/>
+PASS:: 'Plant Code List' Page is displayed after creation of the plant code.<br/>
+*****   TC_34: Validate Plant code add configuration screen Ends   *****<br/>
+*****   TC_39: Validate Pagination for the Plant configuration screen Starts   *****<br/>
+PASS::Plant Code List Page : Clicked on Next for pagination<br/>
+PASS:: Plant Code List Page : Clicked on Previous for Pagination<br/>
+PASS:: User List Page : Selected option is Displayed in Show Entries<br/>
+PASS:: UserList Page : Number of Users in the UserList Page after changing show field: 25<br/>
+PASS:: UserList Page : No of users in the application is  25  which is lessthan or equal to  25<br/>
+*****   TC_39: Validate Pagination for the Plant configuration screen Ends   *****<br/>
+***** TC_40: Validate Search filter in the Plant configuration screen Starts   *****<br/>
+PASS:: 'Plant Code List' Page : Created Plant Code is Matched with Searched value:  300<br/>
+*****   TC_40: Validate Search filter in the Plant configuration screen Ends   *****<br/>
+*****   TC_38: Validate Plant code View configuration screen Starts   *****<br/>
+PASS:: Plant Code List Page : Clicked on View Link<br/>
+PASS:: 'View Plant Code' Page is displayed<br/>
+******    Created Plant Code Data validation Starts    *******<br/>
+PASS:: View PlantCode Page : Code type value is Verified with the value: PLANT_CODE<br/>
+PASS:: View Plant Code Page : Descrciption is Verified with the value: English<br/>
+PASS:: View Plant Code Page : Plant code value is Verified with the value:300<br/>
+PASS:: View plant code Page : Language is Verified with the value:Nederlands<br/>
+PASS:: View Plant code Page : Description is Verified with the value:Eathes<br/>
+PASS:: View Palnt Code Page : Clicked on Cancel button<br/>
+******  Created Plant Code Data validation Ends  *******<br/>
+PASS:: 'Plant Code List' Page is displayed after validating the details.<br/>
+*****   TC_38: Validate Plant code View configuration screen Ends   *****<br/>
+*****   TC_36: Validate Plant code edit configuration screen Starts  *****<br/>
+PASS:: Plant Code List Page : Clicked on Edit link<br/>
+PASS:: 'Edit Plant Code' Page is displayed.<br/>
+PASS:: Edit PlantCode Page : Selected Description with value: English1<br/>
+PASS:: Edit PlantCode Page : Selected Language dropdown with value: Italian<br/>
+PASS:: Edit PlantCode Page : Selected Description with value: Eng<br/>
+PASS:: Edit PlantCode Page : Added the New Language and Description<br/>
+PASS:: Edit PlantCode : Deleted the Language and Description<br/>
+PASS:: Edit PlantCode Page : Clicked on Save button<br/>
+PASS:: Edit PlantCode : Clicked on the Popup Message having the text:Plant Code saved successfully<br/>
+PASS:: 'Plant Code List' Page is displayed after editing the details.<br/>
+*****   TC_36: Validate Plant code edit configuration screen Ends  *****<br/>
+*****   TC_38: Validate Plant code View configuration screen after Edit Starts   *****<br/>
+PASS:: Plant Code List Page : clicked on View Link<br/>
+PASS:: 'View Plant Code' Page is displayed<br/>
+******  Editing Plant Code Data validation Starts  *******<br/>
+PASS:: View PlantCode Page : Code type value is Verified with the value:  PLANT_CODE<br/>
+PASS:: View Plant Code Page : Plant code value is Verified with hte value:  300<br/>
+PASS:: View Plant Code Page : Descrciption is Verified with the value:  English1<br/>
+PASS:: View plant code Page : Language is Verified with the value:  Italian<br/>
+PASS:: View Plant code Page : Description is Verified<br/>
+******  Edited Plant Code Data validation Ends  *******<br/>
+PASS:: View Palnt Code Page : Clicked on Cancel button<br/>
+PASS:: 'Plant Code List' Page is displayed after editing and  validating the details.<br/>
+*****   TC_38: Validate Plant code View configuration screen after Edit Ends   *****<br/>
+*****   TC_37: Validate Plant code Delete configuration screen Starts   *****<br/>
+PASS:: Plant Code List Page : Clicked on Delete link<br/>
+PASS:: Edit PlantCode : Clicked on the Popup Message having the text:Do you want to delete the Plant Code?<br/>
+PASS:: Edit PlantCode : Clicked on the Popup Message having the text:Plant Code Deleted successfully<br/>
+*****   TC_37: Validate Plant code Delete configuration screen ends   *****<br/>
+PASS:: Nestle User Logout is successfull ::<br/>
+</div>
+</td>
+<td></td>
+<td>136</td>
+<td>testcases.workflows.ConfigurationTest@69a3d1d</td></tr>
+<tr>
+<td title='testcases.workflows.ConfigurationTest.CommunityAdmin_ReasonCode()'><b>CommunityAdmin_ReasonCode</b><br>Test class: testcases.workflows.ConfigurationTest<br>Test method: For creating Reason Code in the application<br>Parameters: CommunityAdmin_ReasonCode:::1:::Chrome, {Testcaseid=TC004, ReasonCode=DMM, Description=DAMAGED1, Language=German, LangDescrption=Lang Descrp, DescText=New DMM, LangDescrp=New Lang descp, BrowserName=Chrome}<br/>
+<a href="#Output-1420196421" onClick='toggleBox("Output-1420196421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1420196421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1420196421">
+Browser Executed Type::Chrome<br/>
+PASS:: Nestle User Login is Passed :: NestleSwitzerland@ot.com<br/>
+PASS:: Clicked on Menu link, Configuration;Reason Code<br/>
+PASS:: 'Reason Code List' Page is displayed<br/>
+PASS:: Reason Code List Window : Clicked on Add link<br/>
+PASS:: 'Create Reason code' Page is displayed.<br/>
+*****   TC_28: Validate Reason code add configuration screen Starts   *****<br/>
+PASS:: Create Reason Code Page : Entered Reason code with value: DMM<br/>
+PASS:: Create Reason Code Page : Selected Market with last value: thomas_limited<br/>
+PASS:: Create Reason Code Page : Entered Description with value: DAMAGED1<br/>
+PASS:: Create Reason Code Page : Selected language Dropdown with value: German<br/>
+PASS:: Create Reason Code Page : Entered Description with value: Lang Descrp<br/>
+PASS:: Create Reason Code Page : Entered all mandatory Details and Clicked on Save button<br/>
+PASS:: Create Reason Code : Clicked on OK button with the Popup Message having the text: Reason saved successfully<br/>
+*****   TC_28: Validate Reason code add configuration screen Ends   *****<br/>
+PASS:: 'Reason Code List' Page is displayed.<br/>
+*****   TC_32: Validate Pagination for the Reason Code configuration screen Starts   *****<br/>
+PASS:: Reason Code List Page: Clicked on Next button for pagination.<br/>
+PASS:: Reason Code List Page: Clicked on Previous button for pagination.<br/>
+PASS:: User List Page : Selected 25 option is Displayed in Show Entries<br/>
+PASS:: UserList Page : Number of Users in the UserList Page after changing show field: 25<br/>
+PASS:: UserList Page : Number of Reason Codes displayed in the application is, 25 which is less than or equal to, 25<br/>
+*****   TC_32: Validate Pagination for the Reason Code configuration screen Ends   *****<br/>
+***** TC_33: Validate Search filter in the Reason Code configuration screen Starts   *****<br/>
+PASS:: 'Reason Code List' Page : Created Reason Code is Matched with Searched value: DMM<br/>
+***** TC_33: Validate Search filter in the Reason Code configuration screen Ends   *****<br/>
+PASS:: Reason Code List Page : clicked on View Link<br/>
+PASS:: 'View Reason Code' Page is displayed.<br/>
+****   TC_31: Validate Reason code View configuration screen Starts   *****<br/>
+PASS:: View Reason Code Page : Reason Code verified with value: DMM<br/>
+PASS:: View Reason Code Page : Market Name is verified with value: thomas_limited<br/>
+PASS:: View Reason Code Page : Description is verified with value: DAMAGED1<br/>
+PASS:: View Reason Code Page : Language Dropdown verified with value: German<br/>
+PASS:: View Reason Code Page : Description verified with value: Lang Descrp<br/>
+PASS:: View Reason Code Page : Clicked on Cancel button<br/>
+****   TC_31: Validate Reason code View configuration screen Ends   *****<br/>
+PASS:: 'Reason Code List' Page is displayed.<br/>
+PASS:: Reason Code List Page : Clicked on Edit link<br/>
+PASS:: 'Edit Reason Code' Page is displayed.<br/>
+****   TC_29: Validate Reason code edit configuration screen Starts   *****<br/>
+PASS:: Edit Reason Code Page : Selected market dropdown with new value: Nestle Indonesia<br/>
+PASS:: Edit Reason Code Page : Changed Description with value: New DMM<br/>
+PASS:: Edit Reason Code Page : Changed Description with value: New Lang descp<br/>
+PASS:: Edit Reason Code Page : Clicked on Save button<br/>
+PASS:: Edit Reason Code : Clicked on OK button, with the Popup Message having the text: Reason saved successfully<br/>
+PASS::Reason saved successfully, Clicked on OK Button<br/>
+****   TC_29: Validate Reason code edit configuration screen Ends   *****<br/>
+PASS:: 'Reason Code List' Page is displayed.<br/>
+PASS:: Reason Code List Page : clicked on View Link<br/>
+PASS:: 'View Reason Code' Page is displayed.<br/>
+****   TC_31: Validate Reason code View configuration screen Starts   *****<br/>
+PASS:: View Reason Code Page : Reason Code is verified with value: DMM<br/>
+PASS:: View Reason Code Page : Market Name is verified with value: Nestle Indonesia<br/>
+PASS:: View Reason Code Window : Description is verified with value: New DMM<br/>
+PASS:: View Reason Code Page : Language Dropdown value is verified with value: German<br/>
+PASS:: View Reason Code Page : Language Description is verified with value: New Lang descp<br/>
+PASS:: View Reason Code Window : Clicked on Cancel button<br/>
+****   TC_31: Validate Reason code View configuration screen Ends   *****<br/>
+PASS:: 'Reason Code List' Page is displayed.<br/>
+***** TC_30: Validate Reason code Delete configuration screen starts  *****<br/>
+PASS:: Reason Code List Page : Clicked on Delete link<br/>
+PASS::Reason Code Deleted successfully, Clicked on OK Button<br/>
+***** TC_30: Validate Reason code Delete configuration screen Ends  *****<br/>
+PASS:: Nestle User Logout is successfull ::<br/>
+</div>
+</td>
+<td></td>
+<td>135</td>
+<td>testcases.workflows.ConfigurationTest@69a3d1d</td></tr>
+<tr>
+<td title='testcases.workflows.ConfigurationTest.CommunityAdmin_UOMConfig()'><b>CommunityAdmin_UOMConfig</b><br>Test class: testcases.workflows.ConfigurationTest<br>Test method: For creating UOM Code in the application<br>Parameters: CommunityAdmin_UOMConfig:::1:::Chrome, {Testcaseid=TC003, UOMCode=OTT, UOMDesc=OpenText, UOMlAng=Nederlands, UOMdesc=English , UOMDesc2=OT1, UOMlAng1=Italian, UOMDisplay=Eng, BrowserName=Chrome}<br/>
+<a href="#Output-1653361344" onClick='toggleBox("Output-1653361344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1653361344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1653361344">
+Browser Executed Type::Chrome<br/>
+PASS:: Nestle User Login is Passed :: NestleSwitzerland@ot.com<br/>
+PASS:: Clicked on Menu link, Configuration;UOM Code<br/>
+*****   TC_22: Validate UOM code add configuration screen Starts   *****<br/>
+PASS:: 'UOM Code List' Page is displayed.<br/>
+PASS:: UOM Code List Page: Clicked on Add link<br/>
+PASS:: 'Create UOM Code' Page is displayed.<br/>
+PASS:: Create UOM Code Page : Entered UOMCode with value:  OTT<br/>
+PASS:: Create UOM Code Page : Entered Description with value:  OpenText<br/>
+PASS:: Create UOM Code Page : Selected Language dropdown with value:  Nederlands<br/>
+PASS:: Create UOM Code Page: Selected Description with value:  English <br/>
+PASS:: Create UOM Code Page: Entered Mandatory Details, Clicked on Save button<br/>
+PASS::Clicked on Ok for the Pop Up message with Text: UOM saved successfully<br/>
+PASS:: 'UOM Code List' Page is displayed.<br/>
+*****   TC_22: Validate UOM code add configuration screen Ends   *****<br/>
+*****   TC_26: Validate Pagination for the UOM configuration screen Starts   *****<br/>
+PASS:: UOM Code List Page: Clicked on Next button for pagination.<br/>
+PASS:: UOM Code List Page : Clicked on Previous button for pagination.<br/>
+PASS:: User List Page : Selected 25 option is Displayed in Show Entries <br/>
+PASS:: UserList Page : Number of Users in the UserList Page after changing show field: 20<br/>
+PASS:: UserList Page : No of users in the application is  20  which is less than or equal to  25<br/>
+*****   TC_26: Validate Pagination for the UOM configuration screen Ends   *****<br/>
+***** TC_27: Validate Search filter in the UOM configuration screen Starts   *****<br/>
+PASS:: 'UOM Code List' Page : Created UOM Code is Matched with Searched value:  OTT<br/>
+*****   TC_27: Validate Search filter in the UOM configuration screen Ends   *****<br/>
+****   TC_24: Validate UOM code View configuration screen Starts   *****<br/>
+PASS:: UOM Code List Page : clicked on View Link<br/>
+PASS:: 'View UOM Code' Page is displayed<br/>
+PASS:: View UOM Code Page : UOM Code Validation is Done with Value:  OTT<br/>
+PASS:: View UOM Code Page: Description Validation is Done with value:  OpenText<br/>
+PASS:: View UOM Code Page: Language Validation is Done with value:  Nederlands<br/>
+PASS:: View UOM Code Page: English  Descrciption Validation is Done with Value:  English <br/>
+PASS:: View UOM Code Window : Clicked on Cancel button<br/>
+PASS:: 'UOM Code List' Page is displayed.<br/>
+****   TC_24: Validate UOM code View configuration screen Ends  *****<br/>
+********   TC_23 : Validate UOM code edit configuration screen starts   ******<br/>
+PASS:: UOM Code List Page : Clicked on Edit link<br/>
+PASS:: 'Edit UOM Code' Page is displayed<br/>
+PASS:: Edit UOM Code Page : Entered New Description with value:  OT1<br/>
+PASS:: Edit UOM Code Page : Selected Language dropdown with value:  Italian<br/>
+PASS:: Edit UOM Code Page : Entered New Language Description with value:  Eng<br/>
+PASS:: Edit UOM Code Page : Added the New Language and Description<br/>
+PASS:: Edit UOMcode Page : Deleted the Language and Description which is Added Previously<br/>
+PASS::UOM saved successfully, Clicked on OK Button<br/>
+PASS:: 'UOM Code List' Page is displayed.<br/>
+********   TC_23 : Validate UOM code edit configuration screen Ends   ******<br/>
+****   TC_24: Validate UOM code View configuration screen Starts  *****<br/>
+PASS:: UOM Code List Page : clicked on View Link<br/>
+PASS:: 'View UOM Code' Page is displayed<br/>
+PASS:: View UOM Code Page : UOMCode Validation is Done After Editing the data with value:  OTT<br/>
+PASS:: View UOM Code Page: Description Validation is Done After Editing the data with value:  OT1<br/>
+PASS:: View UOM Code Page : Language Validation is Done After Editing the data with value:  Italian<br/>
+PASS:: View UOM Code Page: Descrciption Validation is Done After Editing the data with value:  Eng<br/>
+PASS:: View UOM Code Page: Clicked on Cancel button<br/>
+PASS:: 'UOM Code List' Page is displayed.<br/>
+****   TC_24: Validate UOM code View configuration screen Ends  *****<br/>
+*****   TC_25: Validate UOM code Delete configuration screen Starts  *****<br/>
+PASS:: UOM Code List Page : Clicked on Delete link<br/>
+PASS::Clicked on Ok button for the Pop up message with text:  UOM Code Deleted successfully<br/>
+*****   TC_25: Validate UOM code Delete configuration screen Ends  *****<br/>
+PASS:: Nestle User Logout is successfull ::<br/>
+</div>
+</td>
+<td></td>
+<td>122</td>
+<td>testcases.workflows.ConfigurationTest@69a3d1d</td></tr>
+</table><p>
+</body>
+</html>

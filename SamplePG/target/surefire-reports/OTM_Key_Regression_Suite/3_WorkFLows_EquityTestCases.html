@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>TestNG:  3:WorkFLows_EquityTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>3:WorkFLows_EquityTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 18 16:27:03 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>244 seconds (244424 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Equities_OrderPlacement_OperationsLogin()'><b>CITI_Equities_OrderPlacement_OperationsLogin</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Parameters: CITI_Equities_OrderPlacement_OperationsLogin:::1, {Testcaseid=TC001, Customer=Auto Reg Equity Client FIX1, FullCustomer=Auto Reg Equity Client FIX1, BuySell=Buy, Quantity=20, SecurityId=US52989W1053, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM DMA, OrderType=Limit, TimeInForce=Good Till Date, AccountId=98765432, StopPrice=, MessageSheetName=BUYGTDLIMIT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=11, ExecutionPrice=10.5}<br/>
+<a href="#Output-1324514662" onClick='toggleBox("Output-1324514662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1324514662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1324514662">
+Test Data Used ::  {Testcaseid=TC001, Customer=Auto Reg Equity Client FIX1, FullCustomer=Auto Reg Equity Client FIX1, BuySell=Buy, Quantity=20, SecurityId=US52989W1053, Currency=USD, Market=US - NEW YORK STOCK EXCHANGE, INC., Broker=CGM DMA, OrderType=Limit, TimeInForce=Good Till Date, AccountId=98765432, StopPrice=, MessageSheetName=BUYGTDLIMIT, HandlingInstructions=Automated, Business=Equity Orders, LimitPrice=11, ExecutionPrice=10.5}<br/>
+*************************************  CLIENT USER/ INITIAL USER START *************************************<br/>
+PASS:: User Login into OTM is successful - User ID :: testmo<br/>
+PASS::Order Entry --> Buy/Sell Order Entry is Clicked<br/>
+PASS::Order Entry Screen :: value selected as "Buy"<br/>
+PASS::Order Entry Screen :: Side value selected as "Buy"<br/>
+PASS::Order Entry Screen :: value selected as "Auto Reg Equity Client FIX1"<br/>
+PASS::Order Entry Screen :: Customer value entered with "Auto Reg Equity Client FIX1"<br/>
+PASS::Order Entry Screen :: Quantity value entered with "20"<br/>
+PASS::Order Entry Screen :: Order ID value entered with "OID2018031816275"<br/>
+PASS::Order Entry Screen :: value selected as "US - NEW YORK STOCK EXCHANGE, INC."<br/>
+PASS::Order Entry Screen :: Market value entered with "US - NEW YORK STOCK EXCHANGE, INC."<br/>
+PASS::Order Entry Screen :: Security Id value entered with "US52989W1053"<br/>
+PASS::Order Entry Screen :: value selected as "CGM DMA"<br/>
+PASS::Order Entry Screen :: Broker value entered with "CGM DMA"<br/>
+PASS::Order Entry Screen :: value selected as "Limit"<br/>
+PASS::Order Entry Screen :: Order Type value entered with "Limit"<br/>
+PASS::Order Entry Screen :: Currency value entered with "USD"<br/>
+PASS::Order Entry Screen :: Limit Price value entered with "11"<br/>
+PASS::Order Entry Screen :: value selected as "98765432"<br/>
+PASS::Order Entry Screen :: Account Id value entered with "98765432"<br/>
+PASS::Order Entry Screen :: value selected as "Good Till Date"<br/>
+PASS::Order Entry Screen :: TimeInForce value entered with "Good Till Date"<br/>
+PASS::Order Entry Screen :: Good Till Date value entered with"20/03/2018"<br/>
+PASS:: Equity Order is created successfully with Order ID :: OID2018031816275<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018031816275<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018031816275<br/>
+INFO::*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018031816275, Actual Value = OID2018031816275<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Buy, Actual Value = Buy<br/>
+PASS::**Order Information::Order Type** Expected Value = Limit, Actual Value = Limit<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 20, Actual Value = 20<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Date - 20/03/2018, Actual Value = Good Till Date - 20/03/2018<br/>
+PASS::**Order Information::Customer** Expected Value = Auto Reg Equity Client FIX1, Actual Value = Auto Reg Equity Client FIX1<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = LIANDI CLEAN TECHNOLOGY INC, Actual Value = LIANDI CLEAN TECHNOLOGY INC<br/>
+PASS::**Order Information::Trading Account** Expected Value = 98765432, Actual Value = 98765432<br/>
+PASS::**Order Information::Status** Expected Value = Pending New, Actual Value = Pending New<br/>
+********* Order Blotter --> All, East Panel Order Details Verification END *********<br/>
+*************************************  CLIENT USER/ INITIAL USER END *************************************<br/>
+*************************************  MIDDLE OFFICE USER START *************************************<br/>
+PASS:: OTM User Login is successful :: testmo1<br/>
+PASS::Order Mgt. --> Order Blotter is Clicked<br/>
+PASS:: Successfully applied the filter with, Order ID::OID2018031816275<br/>
+PASS::Current Order status is  "Pending New"  for the Order ID/Customer Ref :: OID2018031816275<br/>
+PASS:: Clicked on the tool bar button, Accept Order<br/>
+PASS:: In Popup window, clicked on the button, Accept Order<br/>
+PASS::Clicked on Accpet Order Button, In Order Acceptance window entered comments as:"Ref031816301", and Submitted the Order.<br/>
+PASS::Order status is changed to New<br/>
+PASS:: Clicked on the tool bar button, New Execution<br/>
+PASS::Execution Entry Screen :: Execution Quantity entered with value 20<br/>
+PASS::Execution Entry Screen :: Execution Price entered with value 10.5<br/>
+PASS::Execution Entry Screen :: Execution Date entered with value 19/03/2018<br/>
+PASS::Execution Entry Screen :: Settlement Date entered with value 19/03/2018<br/>
+PASS::Execution Entry Screen :: Clicked on the Send Order button <br/>
+PASS:: New Execution of the order is done successfully.<br/>
+PASS::Current Order status is  "Calculated"  for the Order ID/Customer Ref :: OID2018031816275<br/>
+*********Order Blotter --> All, East Panel Order Details Verification START*********<br/>
+PASS::**Order Information::Order ID** Expected Value = OID2018031816275, Actual Value = OID2018031816275<br/>
+PASS::**Order Information::Buy/Sell** Expected Value = Buy, Actual Value = Buy<br/>
+PASS::**Order Information::Order Type** Expected Value = Limit, Actual Value = Limit<br/>
+PASS::**Order Information::Order Quantity** Expected Value = 20, Actual Value = 20<br/>
+PASS::**Order Information::Time in Force** Expected Value = Good Till Date - 20/03/2018, Actual Value = Good Till Date - 20/03/2018<br/>
+PASS::**Order Information::Customer** Expected Value = Auto Reg Equity Client FIX1, Actual Value = Auto Reg Equity Client FIX1<br/>
+PASS::**Order Information::Broker** Expected Value = CGM DMA, Actual Value = CGM DMA<br/>
+PASS::**Order Information::Security Description** Expected Value = LIANDI CLEAN TECHNOLOGY INC, Actual Value = LIANDI CLEAN TECHNOLOGY INC<br/>
+PASS::**Order Information::Trading Account** Expected Value = 98765432, Actual Value = 98765432<br/>
+PASS::**Order Information::Status** Expected Value = Calculated, Actual Value = Calculated<br/>
+*********Order Blotter --> All, East Panel Order Details Verification END*********<br/>
+***********Order Blotter::Open Orders / Trades::New Order accepted::Message Verification START***********<br/>
+***********Order Blotter::Open Orders / Trades::New Order accepted::Message Verification END***********<br/>
+*************************************  MIDDLE OFFICE USER END *************************************<br/>
+</div>
+</td>
+<td></td>
+<td>243</td>
+<td>testcases.workflows.EquityWorkFlowsTests@2a742aa2</td></tr>
+</table><p>
+</body>
+</html>

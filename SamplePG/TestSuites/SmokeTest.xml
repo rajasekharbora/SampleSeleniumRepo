@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionSuite" thread-count="1">
+
+	
+	<parameter name="ENVType" value="COEQA" />
+	
+	<test name="1:TestCaseees">
+		<classes>
+			<class name="testcases.workflows.TestCases">
+				<methods>
+					<include name="launchTestApp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+
+</suite> <!-- Suite -->

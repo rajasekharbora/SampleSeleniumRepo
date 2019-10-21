@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>TestNG:  1:UserTestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>1:UserTestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 01 14:12:13 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>191 seconds (191060 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.TerritoryManagementTest.CommunityAdmin_TerritoryManagementUser()'><b>CommunityAdmin_TerritoryManagementUser</b><br>Test class: testcases.workflows.TerritoryManagementTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.vimalselvam.testng.listener.ExtentTestNgFormatter.afterInvocation(ExtentTestNgFormatter.java:184)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561745898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561745898'><pre>java.lang.NullPointerException
+	at com.vimalselvam.testng.listener.ExtentTestNgFormatter.afterInvocation(ExtentTestNgFormatter.java:184)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeAfterInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:100)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:557)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>34</td>
+<td>testcases.workflows.TerritoryManagementTest@687080dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.NonTerritoryUserTest.CommunityAdmin_NonTerritoryUser()'><b>CommunityAdmin_NonTerritoryUser</b><br>Test class: testcases.workflows.NonTerritoryUserTest<br>Parameters: CommunityAdmin_NonTerritoryUser:::1:::Chrome, {Testcaseid=TC003, UserRole=Order View, Status=Active, BULevel=Company, Language=English, BUTerritoryName=Auto_BU_2018040913050 - Auto_BU_2018040913050, FirstName=Automate1, MiddleName=Automation1, LastName=Client1, ContactNum=56268811, TZone=GMT, BrowserName=Chrome}<br/>
+<a href="#Output-1604353554" onClick='toggleBox("Output-1604353554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1604353554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1604353554">
+Browser Executed Type::Chrome<br/>
+PASS:: Nestle User Login is Passed :: automationadmin1@ot.com<br/>
+PASS:: Clicked on Menu link, Users<br/>
+*****   TC_1.2: Validate that Community admin able to create non-territory user with Order View roles Starts  *****<br/>
+PASS:: 'User List' page is displayed.<br/>
+PASS:: User List Page : Clicked on Add link to create User<br/>
+PASS:: 'Create User' Page is displayed.<br/>
+PASS:: Create User Page: Selected userRole dropdown with value: Order View<br/>
+PASS:: Create User Page: Selected user Status dropdown with value: Active<br/>
+PASS:: Create User Page: Selected BU Level dropdown with value:  Company<br/>
+PASS:: Create User Page: BU/Territory Name with value:  Auto_BU_2018040913050 - Auto_BU_2018040913050<br/>
+PASS:: Create User Page: Entered Email with value:  Auto_BU_2018100114124@ot.com<br/>
+PASS:: Create User Page: Selected preferred Language with value:  English<br/>
+PASS:: Create User Page: After entering Mandatory User details, Clicked on Save button<br/>
+PASS:: User is Created Successfully with email id: Auto_BU_2018100114124@ot.com<br/>
+PASS:: User Detail Page : Clicked on Ok button<br/>
+PASS:: 'User List' Page is displayed after creation of new User.<br/>
+*********   User Created Successfully   ***********<br/>
+*****   TC_1.2: Validate that Community admin able to create non-territory user with Order View roles Ends  *****<br/>
+PASS:: UserList Page: Clicked on Next link for pagination.<br/>
+PASS:: UserList Page : Clicked on Previous Link for pagination<br/>
+PASS:: User List Page : Selected option is Displayed in Show Entries<br/>
+PASS:: UserList Page : Number of Users in the UserList Page after changing show field: 25<br/>
+PASS:: UserList Page : No of users in the application,  25  is lessthan or equal to  25<br/>
+PASS::User List Page: Matched value with the Search field value:  <br/>
+PASS:: User List Page : Searched with Created user:  Auto_BU_2018100114124@ot.com<br/>
+PASS:: User List Page : Clicked on View Link<br/>
+PASS:: 'User Detail' Page is displayed.<br/>
+****** Viewing the Created  User data Starts*******<br/>
+PASS:: User Detail Page : User role is validated with the value: Order View<br/>
+PASS:: User Detail Page : BULevel is validated with the value:  Company<br/>
+PASS:: User Detail Page : Status is validated with the value:  Active<br/>
+PASS:: User Detail Page : Language is validated with the value:  English<br/>
+PASS:: User Detail Page : BU/Territory name is validated with the value:  Auto_BU_2018040913050 - Auto_BU_2018040913050<br/>
+PASS:: User Detail Page : Email is validated with the value:  Auto_BU_2018100114124@ot.com<br/>
+PASS:: User Detail Page : Clicked on Cancel button<br/>
+******    For Created User data validation Ends   *******<br/>
+PASS:: 'User List' Page is displayed aafter validating the details.<br/>
+*****   TC_1.3: Validate that Community admin able to Edit the user Edit User option Starts   *****<br/>
+PASS:: User List Page : Clicked on Edit link<br/>
+PASS:: 'Edit User ' Page is displayed.<br/>
+****** Editing the Created  User data Starts *******<br/>
+PASS:: Edit User Page : First Name is Entered as:  Automate1<br/>
+PASS:: Edit User Page : Middle Name is Entered as:  Automation1<br/>
+PASS:: Edit User Page : Last Name is Entered as:  Client1<br/>
+PASS:: Edit User Page : Mobile Number is Entered as:  56268811<br/>
+PASS:: Edit User Page : Selected user Status dropdown with value:  GMT<br/>
+PASS:: Edit User Page : Clicked on Save button<br/>
+PASS:: Edit User Page : Clicked on OK for the Popup Message having the text: User modified successfully.<br/>
+****** Editing the Created  User data Ends *******<br/>
+PASS:: 'User List' Page is displayed after Editing the details of Users.<br/>
+*****   TC_1.3: Validate that Community admin able to Edit the user Edit User option Ends   *****<br/>
+PASS:: User List Page : Clicked on View Link<br/>
+PASS:: 'User Detail' Page is displayed.<br/>
+****** After editing User details ...User Data validation starts*******<br/>
+PASS:: User Detail Page : User role is validated with the value: Order View<br/>
+PASS:: User Detail Page : BU Level is validated with the value:  Company<br/>
+PASS:: User Detail Page : Status is validated with the value:  Active<br/>
+PASS:: User Detail Page : Language is validated with the value:  English<br/>
+PASS:: User Detail Page : FirstName is validated with the value:  Automate1<br/>
+PASS:: User Detail Page : MiddleName is validated with the value:  Automation1<br/>
+PASS:: User Detail Page : LastName is validated with the value:  Client1<br/>
+PASS:: User Detail Page : Contact Number is validated with the value:  56268811<br/>
+PASS:: User Detail Page : Time Zone is validated with the value:  GMT<br/>
+PASS:: User Detail Page : Email is validated with the value:  Auto_BU_2018100114124@ot.com<br/>
+PASS:: User Detail Page : BU/Territory name is validated with the value:  Auto_BU_2018040913050 - Auto_BU_2018040913050<br/>
+PASS:: User Detail Page : Clicked on Cancel button<br/>
+****** After editing User details ...User Data validation Ends*******<br/>
+PASS:: 'User List' Page is displayed after validating the details.<br/>
+*****   TC_1.2: Validate that Community admin able to Deactivate User Starts  *****<br/>
+PASS:: User List Page : Clicked on Deactive link<br/>
+PASS:: User List Page : Clicked on the Popup Message having the text:Do you want to change the user status ?<br/>
+PASS:: User List Page : Clicked on the Popup Message having the text:User Inactivated Successfully<br/>
+*****   TC_1.2: Validate that Community admin able to Deactivate User Ends  *****<br/>
+*****   TC_1.3.1: Validate that Community admin able to delete non-territory user in User List page using Delete Button Starts  *****<br/>
+PASS:: User List Page : Clicked on Delete link<br/>
+PASS:: User List Page : Clicked on the Popup Message having the text:Do you want to delete the User?<br/>
+PASS:: User List Page : Clicked on the Popup Message having the text:
+	User Deleted Successfully
+	<br/>
+*****   TC_1.3.1: Validate that Community admin able to delete non-territory user in User List page using Delete Button Endss  *****<br/>
+PASS:: Nestle User Logout is successfull ::<br/>
+</div>
+</td>
+<td></td>
+<td>155</td>
+<td>testcases.workflows.NonTerritoryUserTest@38bc8ab5</td></tr>
+</table><p>
+</body>
+</html>

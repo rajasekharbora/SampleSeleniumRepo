@@ -1,0 +1,586 @@
+<html>
+<head>
+<title>TestNG:  2:ApplicationView_Entitlement_TestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>2:ApplicationView_Entitlement_TestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/7</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 19 19:45:57 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>180 seconds (180839 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Parameters: [TestResult name=CITI_Funds_Entitlement_ApplicationAccess status=FAILURE method=FundOrderFlowTests.CITI_Funds_Entitlement_ApplicationAccess()[pri:0, instance:testcases.workflows.FundOrderFlowTests@80503] output=FAIL:: Element is not loaded in time]<br/>
+<a href="#Output-176851829" onClick='toggleBox("Output-176851829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-176851829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-176851829">
+Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:21819/, javascriptEnabled=true, ignoreProtectedModeSettings=false, platformName=WINDOWS, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4dfd9dbb-d46e-4a83-a212-504b487d78ce<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176851829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace176851829'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.FundOrderFlowTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@4b553d26</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.end_test_update_results()'><b>end_test_update_results</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@4b553d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ApplicationAccess()'><b>CITI_Funds_Entitlement_ApplicationAccess</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for Checking the application access<br/>
+<a href="#Output-1610372241" onClick='toggleBox("Output-1610372241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1610372241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1610372241">
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: Element is not loaded in time<br/>
+FAIL:: OTM User Login is failed :: generali4<br/>
+Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'BANCUSTOMQA05', ip: '10.96.85.207', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:21819/, javascriptEnabled=true, ignoreProtectedModeSettings=false, platformName=WINDOWS, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4dfd9dbb-d46e-4a83-a212-504b487d78ce
+*** Element info: {Using=id, value=password}<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at pages.pageclasses.LoginPage.loginToOTM(LoginPage.java:162)
+	at testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ApplicationAccess(FundOrderFlowTests.java:328)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1610372241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1610372241'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at pages.pageclasses.LoginPage.loginToOTM(LoginPage.java:162)
+	at testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ApplicationAccess(FundOrderFlowTests.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>179</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Dublin()'><b>CITI_Funds_Entitlement_OperationsUser_Dublin</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Dublin:::1, {Testcaseid=TC001, CleintUser=Yes, Customer=REGFUNDSWIFTCIS, FullCustomer=RegFundSwiftClient-Fax-CIS-FS1, FundID=INE220B14306, OrderType=Redemption, OrderRegion=CIS, CustomerAccount=6000002 - 6000001000123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890 - RegCIS- Secore SafekeepingAccount1, Shares=, Cash=100, Payment=, AccountAtTA=123456, SheetName=REDMCASH, ContractReference=test123, COPriceNAV=15.25, ExecutedShares=100, ConfirmVerifyRegistration=Yes}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856589162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856589162'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Hk()'><b>CITI_Funds_Entitlement_OperationsUser_Hk</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Hk:::4, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=AIGPF001, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=11.33, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1012552887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1012552887'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Sing()'><b>CITI_Funds_Entitlement_OperationsUser_Sing</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Sing:::3, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE532F14DF9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=12.11, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497558532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497558532'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_OperationsUser_Tampa()'><b>CITI_Funds_Entitlement_OperationsUser_Tampa</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for creating Fund Order Work Flow<br>Parameters: CITI_Funds_Entitlement_OperationsUser_Tampa:::2, {Testcaseid=TC001, CleintUser=Yes, Customer=Generali, FullCustomer=, FundID=INE549A14DD9, OrderType=Subscription, OrderRegion=CIS, CustomerAccount=6411534002b - Test 2 Registration - Generali Test 2, Shares=13.22, Cash=, Payment=, AccountAtTA=123456, SheetName=, ContractReference=, COPriceNAV=, ExecutedShares=, ConfirmVerifyRegistration=}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1366581056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1366581056'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.FundOrderFlowTests.CITI_Funds_Entitlement_ViewAccessLogin()'><b>CITI_Funds_Entitlement_ViewAccessLogin</b><br>Test class: testcases.workflows.FundOrderFlowTests<br>Test method: This test case is for checking application access</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974606907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974606907'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.FundOrderFlowTests@80503</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_Funds_Equities_Entitlement_ApplicationAccess()'><b>CITI_Funds_Equities_Entitlement_ApplicationAccess</b><br>Test class: testcases.workflows.EquityWorkFlowsTests<br>Test method: This test case is for checking application access for 'tviewonly' user</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146613458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2146613458'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@4b553d26</td></tr>
+<tr>
+<td title='testcases.workflows.EquityWorkFlowsTests.CITI_OrderMgt_Audit_Reg_ViewAccessUser()'><b>CITI_OrderMgt_Audit_Reg_ViewAccessUser</b><br>Test class: testcases.workflows.EquityWorkFlowsTests</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1518752790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1518752790'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at utilities.webdriverfunctions.WebDriverMethods.capture_screenshot(WebDriverMethods.java:149)
+	at testcases.commontoall.CommonToAllTests.end_test_update_results(CommonToAllTests.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>testcases.workflows.EquityWorkFlowsTests@4b553d26</td></tr>
+</table><p>
+</body>
+</html>
